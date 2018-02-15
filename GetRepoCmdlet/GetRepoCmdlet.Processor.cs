@@ -188,7 +188,7 @@ namespace GetRepoCmdlet
 			Directory.Delete(repoPath, true);
 		}
 
-		internal static string ExecuteGit(Enumerations.GitCommand gitCmd, string repoURL, string branch)
+		internal static string PrepareGitCmd(Enumerations.GitCommand gitCmd, string repoURL, string branch)
 		{
 			switch (gitCmd)
 			{

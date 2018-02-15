@@ -3,6 +3,8 @@
  *  - Verbose output
  */
 
+using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Management.Automation;
 
@@ -99,8 +101,9 @@ namespace GetRepoCmdlet
 			if (_cmdContainer.GitCmd != Enumerations.GitCommand.ABORT)
 			{
 				Host.UI.WriteLine("Cloning repo now...");
-				string cmdString = Processor.ExecuteGit(_cmdContainer.GitCmd, _cmdContainer.URL, _cmdContainer.Branch);
+				string cmdString = Processor.PrepareGitCmd(_cmdContainer.GitCmd, _cmdContainer.URL, _cmdContainer.Branch);
 				//! Get messages while invoking and display here
+				Verbose();
 				PowerShell.Create().AddScript(cmdString).Invoke();
 				Host.UI.WriteLine("Repo cloned successfully.");
 
@@ -118,6 +121,36 @@ namespace GetRepoCmdlet
 			if (_cmdContainer.Exit)
 			{ // Exit flag is present. Close prompt
 				Host.SetShouldExit(0);
+			}
+		}
+
+		private void Verbose()
+		{
+			List<string> messages = new List<string>();
+			using (System.Diagnostics.Process process = new System.Diagnostics.Process())
+			{
+				process.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+				process.StartInfo.FileName = "cmd.exe";
+				process.StartInfo.Verb = "runas";
+				process.StartInfo.Arguments = Processor.PrepareGitCmd(_cmdContainer.GitCmd, _cmdContainer.URL, _cmdContainer.Branch);
+				process.StartInfo.UseShellExecute = false;
+				process.StartInfo.RedirectStandardOutput = true;
+				process.StartInfo.RedirectStandardError = true;
+				//* Set your output and error (asynchronous) handlers
+				//process.OutputDataReceived += (s, e) => symLink.Messages.Add(Enumerations.MessageType.SystemError, e.Data);
+				//process.ErrorDataReceived += (s, e) => symLink.Messages.Add(Enumerations.MessageType.Info, e.Data);
+				process.OutputDataReceived += (s, e) => messages.Add(e.Data);
+				process.ErrorDataReceived += (s, e) => messages.Add(e.Data);
+				//* Start process and handler
+				process.Start();
+				process.BeginOutputReadLine();
+				process.BeginErrorReadLine();
+				process.WaitForExit();
+			}
+
+			foreach (var item in messages)
+			{
+				Host.UI.WriteLine(item);
 			}
 		}
 	}
