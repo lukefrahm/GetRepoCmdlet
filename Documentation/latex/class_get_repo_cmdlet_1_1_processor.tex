@@ -1,0 +1,264 @@
+\hypertarget{class_get_repo_cmdlet_1_1_processor}{}\section{Get\+Repo\+Cmdlet.\+Processor Class Reference}
+\label{class_get_repo_cmdlet_1_1_processor}\index{Get\+Repo\+Cmdlet.\+Processor@{Get\+Repo\+Cmdlet.\+Processor}}
+
+
+Internal static class that holds logic for execution of the cmdlet.  
+
+
+\subsection*{Static Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Git\+Param\+Type \mbox{\hyperlink{class_get_repo_cmdlet_1_1_processor_a0fba012ba15720a0fcd419c44b757c5b}{Validate\+Git\+Param}} (string git\+Param)
+\begin{DoxyCompactList}\small\item\em Validates the git parameter based on a regex expression to determine both validity, as well as if it is a U\+RL or repo name. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_get_repo_cmdlet_1_1_processor_a9c532782d2575d5244440407103b4352}{Prepare\+Git\+Cmd}} (Git\+Command git\+Cmd, string repo\+U\+RL, string branch)
+\begin{DoxyCompactList}\small\item\em Prepares the git command. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_get_repo_cmdlet_1_1_processor_a4a96e92b1c20e4f4fc38f9230d51912a}{Create\+Repo\+Name}} (string git\+Repo\+\_\+\+U\+RL)
+\begin{DoxyCompactList}\small\item\em Creates the name of the repo from the U\+RL passed. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_get_repo_cmdlet_1_1_processor_ae8b0a813f91987946bfc8e218b3ab396}{Create\+Repo\+U\+RL}} (string git\+Repo\+\_\+\+N\+A\+ME)
+\begin{DoxyCompactList}\small\item\em Creates the name of the repo from the repo name passed. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_get_repo_cmdlet_1_1_processor_ace9c1d574b3758f94c8cf65e7fcddbf3}{Check\+For\+Existing\+Directory}} (string directory)
+\begin{DoxyCompactList}\small\item\em Checks for an existing directory for this repo in the current location. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_get_repo_cmdlet_1_1_processor_ae0c9a18121e39f1ee3c183d08f7bf0b2}{Backup\+Directory}} (string repo\+Path)
+\begin{DoxyCompactList}\small\item\em Performs a backup of the existing directory. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_get_repo_cmdlet_1_1_processor_ae5f7bb67f8595174379a2cb144ae22c3}{Delete\+Directory}} (string repo\+Path)
+\begin{DoxyCompactList}\small\item\em Deletes the directory passed to the method. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_get_repo_cmdlet_1_1_processor_a0d3e38fbd41a8e6bdfbc62dcf4656e90}{Launch\+VS}} (\mbox{\hyperlink{class_get_repo_cmdlet_1_1_cmd_container}{Cmd\+Container}} cmd\+Container)
+\begin{DoxyCompactList}\small\item\em Launches Visual Studio. If no parameter was passed by V\+S\+Version, launches the default application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Internal static class that holds logic for execution of the cmdlet. 
+
+
+
+Definition at line 13 of file Get\+Repo\+Cmdlet.\+Processor.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_processor_ae0c9a18121e39f1ee3c183d08f7bf0b2}\label{class_get_repo_cmdlet_1_1_processor_ae0c9a18121e39f1ee3c183d08f7bf0b2}} 
+\index{Get\+Repo\+Cmdlet\+::\+Processor@{Get\+Repo\+Cmdlet\+::\+Processor}!Backup\+Directory@{Backup\+Directory}}
+\index{Backup\+Directory@{Backup\+Directory}!Get\+Repo\+Cmdlet\+::\+Processor@{Get\+Repo\+Cmdlet\+::\+Processor}}
+\subsubsection{\texorpdfstring{Backup\+Directory()}{BackupDirectory()}}
+{\footnotesize\ttfamily static string Get\+Repo\+Cmdlet.\+Processor.\+Backup\+Directory (\begin{DoxyParamCaption}\item[{string}]{repo\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Performs a backup of the existing directory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em repo\+Path} & The repo path to backup.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The location of the backup created by the process.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Bak\+Dir\+Append\+String, Bak\+Dir\+Append\+String\+\_\+\+Multi
+
+
+\end{DoxySeeAlso}
+
+
+Definition at line 128 of file Get\+Repo\+Cmdlet.\+Processor.\+cs.
+
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_processor_ace9c1d574b3758f94c8cf65e7fcddbf3}\label{class_get_repo_cmdlet_1_1_processor_ace9c1d574b3758f94c8cf65e7fcddbf3}} 
+\index{Get\+Repo\+Cmdlet\+::\+Processor@{Get\+Repo\+Cmdlet\+::\+Processor}!Check\+For\+Existing\+Directory@{Check\+For\+Existing\+Directory}}
+\index{Check\+For\+Existing\+Directory@{Check\+For\+Existing\+Directory}!Get\+Repo\+Cmdlet\+::\+Processor@{Get\+Repo\+Cmdlet\+::\+Processor}}
+\subsubsection{\texorpdfstring{Check\+For\+Existing\+Directory()}{CheckForExistingDirectory()}}
+{\footnotesize\ttfamily static bool Get\+Repo\+Cmdlet.\+Processor.\+Check\+For\+Existing\+Directory (\begin{DoxyParamCaption}\item[{string}]{directory }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Checks for an existing directory for this repo in the current location. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em directory} & The directory to validate.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the directory exists. {\ttfamily false} if the directory does not exist. 
+\end{DoxyReturn}
+
+
+Definition at line 116 of file Get\+Repo\+Cmdlet.\+Processor.\+cs.
+
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_processor_a4a96e92b1c20e4f4fc38f9230d51912a}\label{class_get_repo_cmdlet_1_1_processor_a4a96e92b1c20e4f4fc38f9230d51912a}} 
+\index{Get\+Repo\+Cmdlet\+::\+Processor@{Get\+Repo\+Cmdlet\+::\+Processor}!Create\+Repo\+Name@{Create\+Repo\+Name}}
+\index{Create\+Repo\+Name@{Create\+Repo\+Name}!Get\+Repo\+Cmdlet\+::\+Processor@{Get\+Repo\+Cmdlet\+::\+Processor}}
+\subsubsection{\texorpdfstring{Create\+Repo\+Name()}{CreateRepoName()}}
+{\footnotesize\ttfamily static string Get\+Repo\+Cmdlet.\+Processor.\+Create\+Repo\+Name (\begin{DoxyParamCaption}\item[{string}]{git\+Repo\+\_\+\+U\+RL }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Creates the name of the repo from the U\+RL passed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em git\+Repo\+\_\+\+U\+RL} & The git repo U\+RL.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The repo name, extracted from the U\+RL.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_get_repo_cmdlet_1_1_processor_a0fba012ba15720a0fcd419c44b757c5b}{Validate\+Git\+Param(string)}}
+
+
+\end{DoxySeeAlso}
+
+
+Definition at line 88 of file Get\+Repo\+Cmdlet.\+Processor.\+cs.
+
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_processor_ae8b0a813f91987946bfc8e218b3ab396}\label{class_get_repo_cmdlet_1_1_processor_ae8b0a813f91987946bfc8e218b3ab396}} 
+\index{Get\+Repo\+Cmdlet\+::\+Processor@{Get\+Repo\+Cmdlet\+::\+Processor}!Create\+Repo\+U\+RL@{Create\+Repo\+U\+RL}}
+\index{Create\+Repo\+U\+RL@{Create\+Repo\+U\+RL}!Get\+Repo\+Cmdlet\+::\+Processor@{Get\+Repo\+Cmdlet\+::\+Processor}}
+\subsubsection{\texorpdfstring{Create\+Repo\+U\+R\+L()}{CreateRepoURL()}}
+{\footnotesize\ttfamily static string Get\+Repo\+Cmdlet.\+Processor.\+Create\+Repo\+U\+RL (\begin{DoxyParamCaption}\item[{string}]{git\+Repo\+\_\+\+N\+A\+ME }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Creates the name of the repo from the repo name passed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em git\+Repo\+\_\+\+N\+A\+ME} & The git repo name.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The repo name, concatenated with constants to create the git U\+RL.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_get_repo_cmdlet_1_1_processor_a0fba012ba15720a0fcd419c44b757c5b}{Validate\+Git\+Param(string)}}, Git\+U\+R\+L\+Starter, Git\+U\+R\+L\+Ender
+
+
+\end{DoxySeeAlso}
+
+
+Definition at line 101 of file Get\+Repo\+Cmdlet.\+Processor.\+cs.
+
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_processor_ae5f7bb67f8595174379a2cb144ae22c3}\label{class_get_repo_cmdlet_1_1_processor_ae5f7bb67f8595174379a2cb144ae22c3}} 
+\index{Get\+Repo\+Cmdlet\+::\+Processor@{Get\+Repo\+Cmdlet\+::\+Processor}!Delete\+Directory@{Delete\+Directory}}
+\index{Delete\+Directory@{Delete\+Directory}!Get\+Repo\+Cmdlet\+::\+Processor@{Get\+Repo\+Cmdlet\+::\+Processor}}
+\subsubsection{\texorpdfstring{Delete\+Directory()}{DeleteDirectory()}}
+{\footnotesize\ttfamily static bool Get\+Repo\+Cmdlet.\+Processor.\+Delete\+Directory (\begin{DoxyParamCaption}\item[{string}]{repo\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Deletes the directory passed to the method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em repo\+Path} & The directory path to delete (the old repo).\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 158 of file Get\+Repo\+Cmdlet.\+Processor.\+cs.
+
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_processor_a0d3e38fbd41a8e6bdfbc62dcf4656e90}\label{class_get_repo_cmdlet_1_1_processor_a0d3e38fbd41a8e6bdfbc62dcf4656e90}} 
+\index{Get\+Repo\+Cmdlet\+::\+Processor@{Get\+Repo\+Cmdlet\+::\+Processor}!Launch\+VS@{Launch\+VS}}
+\index{Launch\+VS@{Launch\+VS}!Get\+Repo\+Cmdlet\+::\+Processor@{Get\+Repo\+Cmdlet\+::\+Processor}}
+\subsubsection{\texorpdfstring{Launch\+V\+S()}{LaunchVS()}}
+{\footnotesize\ttfamily static string Get\+Repo\+Cmdlet.\+Processor.\+Launch\+VS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_get_repo_cmdlet_1_1_cmd_container}{Cmd\+Container}}}]{cmd\+Container }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Launches Visual Studio. If no parameter was passed by V\+S\+Version, launches the default application. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd\+Container} & The \mbox{\hyperlink{class_get_repo_cmdlet_1_1_cmd_container}{Cmd\+Container}} holding the information needed by this process.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Messages of what this process has done.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_get_repo_cmdlet_1_1_cmd_container}{Cmd\+Container}}, \mbox{\hyperlink{class_get_repo_cmdlet_1_1_const_mgr}{Const\+Mgr}}
+
+
+\end{DoxySeeAlso}
+Collects the sln file path of the repo from its directory. 
+
+\begin{DoxyReturn}{Returns}
+The message string of the result. If empty string, no message needs passed back (success)
+\end{DoxyReturn}
+~\newline
+ 
+
+Executes the VS path to launch the repo\textquotesingle{}s sln file. 
+
+Definition at line 183 of file Get\+Repo\+Cmdlet.\+Processor.\+cs.
+
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_processor_a9c532782d2575d5244440407103b4352}\label{class_get_repo_cmdlet_1_1_processor_a9c532782d2575d5244440407103b4352}} 
+\index{Get\+Repo\+Cmdlet\+::\+Processor@{Get\+Repo\+Cmdlet\+::\+Processor}!Prepare\+Git\+Cmd@{Prepare\+Git\+Cmd}}
+\index{Prepare\+Git\+Cmd@{Prepare\+Git\+Cmd}!Get\+Repo\+Cmdlet\+::\+Processor@{Get\+Repo\+Cmdlet\+::\+Processor}}
+\subsubsection{\texorpdfstring{Prepare\+Git\+Cmd()}{PrepareGitCmd()}}
+{\footnotesize\ttfamily static string Get\+Repo\+Cmdlet.\+Processor.\+Prepare\+Git\+Cmd (\begin{DoxyParamCaption}\item[{Git\+Command}]{git\+Cmd,  }\item[{string}]{repo\+U\+RL,  }\item[{string}]{branch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Prepares the git command. 
+
+Uses local functions to allow for easy extensibility for future git commands. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em git\+Cmd} & The git command to execute.\\
+\hline
+{\em repo\+U\+RL} & The repo U\+RL.\\
+\hline
+{\em branch} & The branch, if specified.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The command string to execute.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Git\+Command
+
+
+\end{DoxySeeAlso}
+
+
+Definition at line 58 of file Get\+Repo\+Cmdlet.\+Processor.\+cs.
+
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_processor_a0fba012ba15720a0fcd419c44b757c5b}\label{class_get_repo_cmdlet_1_1_processor_a0fba012ba15720a0fcd419c44b757c5b}} 
+\index{Get\+Repo\+Cmdlet\+::\+Processor@{Get\+Repo\+Cmdlet\+::\+Processor}!Validate\+Git\+Param@{Validate\+Git\+Param}}
+\index{Validate\+Git\+Param@{Validate\+Git\+Param}!Get\+Repo\+Cmdlet\+::\+Processor@{Get\+Repo\+Cmdlet\+::\+Processor}}
+\subsubsection{\texorpdfstring{Validate\+Git\+Param()}{ValidateGitParam()}}
+{\footnotesize\ttfamily static Git\+Param\+Type Get\+Repo\+Cmdlet.\+Processor.\+Validate\+Git\+Param (\begin{DoxyParamCaption}\item[{string}]{git\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Validates the git parameter based on a regex expression to determine both validity, as well as if it is a U\+RL or repo name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em git\+Param} & The git parameter passed by the user.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Enumeration of the validation result. 
+\end{DoxyReturn}
+
+
+If the parameter is valid and a U\+RL, returns Git\+Param\+Type.\+U\+RL If the parameter is valid and a repo name, returns Git\+Param\+Type.\+R\+E\+P\+O\+\_\+\+N\+A\+ME If the parameter is in invalid form, returns Git\+Param\+Type.\+I\+N\+V\+A\+L\+ID 
+
+\begin{DoxySeeAlso}{See also}
+Git\+Param\+Type
+
+
+\end{DoxySeeAlso}
+
+
+Definition at line 30 of file Get\+Repo\+Cmdlet.\+Processor.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Get\+Repo\+Cmdlet/\mbox{\hyperlink{_get_repo_cmdlet_8_processor_8cs}{Get\+Repo\+Cmdlet.\+Processor.\+cs}}\end{DoxyCompactItemize}

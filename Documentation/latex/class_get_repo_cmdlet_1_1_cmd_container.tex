@@ -1,0 +1,245 @@
+\hypertarget{class_get_repo_cmdlet_1_1_cmd_container}{}\section{Get\+Repo\+Cmdlet.\+Cmd\+Container Class Reference}
+\label{class_get_repo_cmdlet_1_1_cmd_container}\index{Get\+Repo\+Cmdlet.\+Cmd\+Container@{Get\+Repo\+Cmdlet.\+Cmd\+Container}}
+
+
+Container for information needed to complete cmdlet processing.  
+
+
+\subsection*{Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_get_repo_cmdlet_1_1_cmd_container_aad0056fff2ee68ae46f84ec17e31cf01}{Cmd\+Container}} (string url, string repo\+Name, string branch, bool stop\+Execute, double? vs\+Version, bool exit, string fs\+Current\+Directory)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \mbox{\hyperlink{class_get_repo_cmdlet_1_1_cmd_container}{Cmd\+Container}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_get_repo_cmdlet_1_1_cmd_container_ab104ae079cf2c2c4efd7a13bb38ae6b1}{Halt\+Execution}} ()
+\begin{DoxyCompactList}\small\item\em Sets the Stop\+Execute flag to {\ttfamily true} to prevent VS execution. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_get_repo_cmdlet_1_1_cmd_container_a57d88a0a01ee850f4a971e0063a8df8f}{U\+RL}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the github U\+RL. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_get_repo_cmdlet_1_1_cmd_container_a2c0e7dc57cca3fefcea86853024ab385}{Repo\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the name of the repo. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_get_repo_cmdlet_1_1_cmd_container_a36567fe0c3d03173a07f60ddb1524029}{Branch}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the branch name. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_get_repo_cmdlet_1_1_cmd_container_a2400da2e8f1299ed878e7c4cabf2afb6}{Stop\+Execute}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating whether to skip execution of the solution file. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_get_repo_cmdlet_1_1_cmd_container_aa3c4d3c76b60c871e174d0e971c7b6d4}{V\+S\+Version}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the VS version requested for execution. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_get_repo_cmdlet_1_1_cmd_container_a82345df98877ab881d8363d2bae6b51c}{Exit}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating whether the process should exit the terminal on procedure completion. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_get_repo_cmdlet_1_1_cmd_container_a65f2a49c7e4f8f1848577840e705bd9f}{Root\+Path}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the root path where the repo will be added. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_get_repo_cmdlet_1_1_cmd_container_a634b5f69f676258f3735f6b095b8c5c7}{Repo\+Path}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the repo file path. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_get_repo_cmdlet_1_1_cmd_container_a059a91e8df682e275e0b2e46ac6b28a3}{Sln\+File}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the .sln file path. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_get_repo_cmdlet_1_1_enumerations_a52683b5a6aca649a73b7bc9a076cc747}{Enumerations.\+Git\+Command}} \mbox{\hyperlink{class_get_repo_cmdlet_1_1_cmd_container_a7f722b89dac0b65bfb0f897350ee68c3}{Git\+Cmd}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the git command type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Container for information needed to complete cmdlet processing. 
+
+
+
+Definition at line 36 of file Get\+Repo\+Cmdlet.\+Objects.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_cmd_container_aad0056fff2ee68ae46f84ec17e31cf01}\label{class_get_repo_cmdlet_1_1_cmd_container_aad0056fff2ee68ae46f84ec17e31cf01}} 
+\index{Get\+Repo\+Cmdlet\+::\+Cmd\+Container@{Get\+Repo\+Cmdlet\+::\+Cmd\+Container}!Cmd\+Container@{Cmd\+Container}}
+\index{Cmd\+Container@{Cmd\+Container}!Get\+Repo\+Cmdlet\+::\+Cmd\+Container@{Get\+Repo\+Cmdlet\+::\+Cmd\+Container}}
+\subsubsection{\texorpdfstring{Cmd\+Container()}{CmdContainer()}}
+{\footnotesize\ttfamily Get\+Repo\+Cmdlet.\+Cmd\+Container.\+Cmd\+Container (\begin{DoxyParamCaption}\item[{string}]{url,  }\item[{string}]{repo\+Name,  }\item[{string}]{branch,  }\item[{bool}]{stop\+Execute,  }\item[{double?}]{vs\+Version,  }\item[{bool}]{exit,  }\item[{string}]{fs\+Current\+Directory }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [package]}}
+
+
+
+Initializes a new instance of the \mbox{\hyperlink{class_get_repo_cmdlet_1_1_cmd_container}{Cmd\+Container}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The github U\+RL.\\
+\hline
+{\em repo\+Name} & Name of the repo.\\
+\hline
+{\em branch} & The branch.\\
+\hline
+{\em stop\+Execute} & if set to {\ttfamily true} stop execution.\\
+\hline
+{\em vs\+Version} & The VS version to execute.\\
+\hline
+{\em exit} & if set to {\ttfamily true} exit PS instance.\\
+\hline
+{\em fs\+Current\+Directory} & The current file system directory of this PS instance.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 134 of file Get\+Repo\+Cmdlet.\+Objects.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_cmd_container_ab104ae079cf2c2c4efd7a13bb38ae6b1}\label{class_get_repo_cmdlet_1_1_cmd_container_ab104ae079cf2c2c4efd7a13bb38ae6b1}} 
+\index{Get\+Repo\+Cmdlet\+::\+Cmd\+Container@{Get\+Repo\+Cmdlet\+::\+Cmd\+Container}!Halt\+Execution@{Halt\+Execution}}
+\index{Halt\+Execution@{Halt\+Execution}!Get\+Repo\+Cmdlet\+::\+Cmd\+Container@{Get\+Repo\+Cmdlet\+::\+Cmd\+Container}}
+\subsubsection{\texorpdfstring{Halt\+Execution()}{HaltExecution()}}
+{\footnotesize\ttfamily void Get\+Repo\+Cmdlet.\+Cmd\+Container.\+Halt\+Execution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [package]}}
+
+
+
+Sets the Stop\+Execute flag to {\ttfamily true} to prevent VS execution. 
+
+
+
+Definition at line 150 of file Get\+Repo\+Cmdlet.\+Objects.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_cmd_container_a36567fe0c3d03173a07f60ddb1524029}\label{class_get_repo_cmdlet_1_1_cmd_container_a36567fe0c3d03173a07f60ddb1524029}} 
+\index{Get\+Repo\+Cmdlet\+::\+Cmd\+Container@{Get\+Repo\+Cmdlet\+::\+Cmd\+Container}!Branch@{Branch}}
+\index{Branch@{Branch}!Get\+Repo\+Cmdlet\+::\+Cmd\+Container@{Get\+Repo\+Cmdlet\+::\+Cmd\+Container}}
+\subsubsection{\texorpdfstring{Branch}{Branch}}
+{\footnotesize\ttfamily string Get\+Repo\+Cmdlet.\+Cmd\+Container.\+Branch\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}, {\ttfamily [package]}}
+
+
+
+Gets the branch name. 
+
+The github branch. 
+
+Definition at line 61 of file Get\+Repo\+Cmdlet.\+Objects.\+cs.
+
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_cmd_container_a82345df98877ab881d8363d2bae6b51c}\label{class_get_repo_cmdlet_1_1_cmd_container_a82345df98877ab881d8363d2bae6b51c}} 
+\index{Get\+Repo\+Cmdlet\+::\+Cmd\+Container@{Get\+Repo\+Cmdlet\+::\+Cmd\+Container}!Exit@{Exit}}
+\index{Exit@{Exit}!Get\+Repo\+Cmdlet\+::\+Cmd\+Container@{Get\+Repo\+Cmdlet\+::\+Cmd\+Container}}
+\subsubsection{\texorpdfstring{Exit}{Exit}}
+{\footnotesize\ttfamily bool Get\+Repo\+Cmdlet.\+Cmd\+Container.\+Exit\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}, {\ttfamily [package]}}
+
+
+
+Gets a value indicating whether the process should exit the terminal on procedure completion. 
+
+{\ttfamily true} if Exit is present; otherwise, {\ttfamily false}. 
+
+Definition at line 87 of file Get\+Repo\+Cmdlet.\+Objects.\+cs.
+
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_cmd_container_a7f722b89dac0b65bfb0f897350ee68c3}\label{class_get_repo_cmdlet_1_1_cmd_container_a7f722b89dac0b65bfb0f897350ee68c3}} 
+\index{Get\+Repo\+Cmdlet\+::\+Cmd\+Container@{Get\+Repo\+Cmdlet\+::\+Cmd\+Container}!Git\+Cmd@{Git\+Cmd}}
+\index{Git\+Cmd@{Git\+Cmd}!Get\+Repo\+Cmdlet\+::\+Cmd\+Container@{Get\+Repo\+Cmdlet\+::\+Cmd\+Container}}
+\subsubsection{\texorpdfstring{Git\+Cmd}{GitCmd}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_get_repo_cmdlet_1_1_enumerations_a52683b5a6aca649a73b7bc9a076cc747}{Enumerations.\+Git\+Command}} Get\+Repo\+Cmdlet.\+Cmd\+Container.\+Git\+Cmd\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [package]}}
+
+
+
+Gets or sets the git command type. 
+
+The git command. 
+
+Definition at line 122 of file Get\+Repo\+Cmdlet.\+Objects.\+cs.
+
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_cmd_container_a2c0e7dc57cca3fefcea86853024ab385}\label{class_get_repo_cmdlet_1_1_cmd_container_a2c0e7dc57cca3fefcea86853024ab385}} 
+\index{Get\+Repo\+Cmdlet\+::\+Cmd\+Container@{Get\+Repo\+Cmdlet\+::\+Cmd\+Container}!Repo\+Name@{Repo\+Name}}
+\index{Repo\+Name@{Repo\+Name}!Get\+Repo\+Cmdlet\+::\+Cmd\+Container@{Get\+Repo\+Cmdlet\+::\+Cmd\+Container}}
+\subsubsection{\texorpdfstring{Repo\+Name}{RepoName}}
+{\footnotesize\ttfamily string Get\+Repo\+Cmdlet.\+Cmd\+Container.\+Repo\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}, {\ttfamily [package]}}
+
+
+
+Gets the name of the repo. 
+
+The name of the repo. 
+
+Definition at line 53 of file Get\+Repo\+Cmdlet.\+Objects.\+cs.
+
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_cmd_container_a634b5f69f676258f3735f6b095b8c5c7}\label{class_get_repo_cmdlet_1_1_cmd_container_a634b5f69f676258f3735f6b095b8c5c7}} 
+\index{Get\+Repo\+Cmdlet\+::\+Cmd\+Container@{Get\+Repo\+Cmdlet\+::\+Cmd\+Container}!Repo\+Path@{Repo\+Path}}
+\index{Repo\+Path@{Repo\+Path}!Get\+Repo\+Cmdlet\+::\+Cmd\+Container@{Get\+Repo\+Cmdlet\+::\+Cmd\+Container}}
+\subsubsection{\texorpdfstring{Repo\+Path}{RepoPath}}
+{\footnotesize\ttfamily string Get\+Repo\+Cmdlet.\+Cmd\+Container.\+Repo\+Path\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}, {\ttfamily [package]}}
+
+
+
+Gets the repo file path. 
+
+The repo path. 
+
+Definition at line 105 of file Get\+Repo\+Cmdlet.\+Objects.\+cs.
+
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_cmd_container_a65f2a49c7e4f8f1848577840e705bd9f}\label{class_get_repo_cmdlet_1_1_cmd_container_a65f2a49c7e4f8f1848577840e705bd9f}} 
+\index{Get\+Repo\+Cmdlet\+::\+Cmd\+Container@{Get\+Repo\+Cmdlet\+::\+Cmd\+Container}!Root\+Path@{Root\+Path}}
+\index{Root\+Path@{Root\+Path}!Get\+Repo\+Cmdlet\+::\+Cmd\+Container@{Get\+Repo\+Cmdlet\+::\+Cmd\+Container}}
+\subsubsection{\texorpdfstring{Root\+Path}{RootPath}}
+{\footnotesize\ttfamily string Get\+Repo\+Cmdlet.\+Cmd\+Container.\+Root\+Path\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}, {\ttfamily [package]}}
+
+
+
+Gets the root path where the repo will be added. 
+
+The root path. 
+
+Definition at line 97 of file Get\+Repo\+Cmdlet.\+Objects.\+cs.
+
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_cmd_container_a059a91e8df682e275e0b2e46ac6b28a3}\label{class_get_repo_cmdlet_1_1_cmd_container_a059a91e8df682e275e0b2e46ac6b28a3}} 
+\index{Get\+Repo\+Cmdlet\+::\+Cmd\+Container@{Get\+Repo\+Cmdlet\+::\+Cmd\+Container}!Sln\+File@{Sln\+File}}
+\index{Sln\+File@{Sln\+File}!Get\+Repo\+Cmdlet\+::\+Cmd\+Container@{Get\+Repo\+Cmdlet\+::\+Cmd\+Container}}
+\subsubsection{\texorpdfstring{Sln\+File}{SlnFile}}
+{\footnotesize\ttfamily string Get\+Repo\+Cmdlet.\+Cmd\+Container.\+Sln\+File\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [package]}}
+
+
+
+Gets or sets the .sln file path. 
+
+The solution file. 
+
+Definition at line 113 of file Get\+Repo\+Cmdlet.\+Objects.\+cs.
+
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_cmd_container_a2400da2e8f1299ed878e7c4cabf2afb6}\label{class_get_repo_cmdlet_1_1_cmd_container_a2400da2e8f1299ed878e7c4cabf2afb6}} 
+\index{Get\+Repo\+Cmdlet\+::\+Cmd\+Container@{Get\+Repo\+Cmdlet\+::\+Cmd\+Container}!Stop\+Execute@{Stop\+Execute}}
+\index{Stop\+Execute@{Stop\+Execute}!Get\+Repo\+Cmdlet\+::\+Cmd\+Container@{Get\+Repo\+Cmdlet\+::\+Cmd\+Container}}
+\subsubsection{\texorpdfstring{Stop\+Execute}{StopExecute}}
+{\footnotesize\ttfamily bool Get\+Repo\+Cmdlet.\+Cmd\+Container.\+Stop\+Execute\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}, {\ttfamily [package]}}
+
+
+
+Gets a value indicating whether to skip execution of the solution file. 
+
+{\ttfamily true} if \mbox{[}stop execute\mbox{]} is present; otherwise, {\ttfamily false}. 
+
+Definition at line 69 of file Get\+Repo\+Cmdlet.\+Objects.\+cs.
+
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_cmd_container_a57d88a0a01ee850f4a971e0063a8df8f}\label{class_get_repo_cmdlet_1_1_cmd_container_a57d88a0a01ee850f4a971e0063a8df8f}} 
+\index{Get\+Repo\+Cmdlet\+::\+Cmd\+Container@{Get\+Repo\+Cmdlet\+::\+Cmd\+Container}!U\+RL@{U\+RL}}
+\index{U\+RL@{U\+RL}!Get\+Repo\+Cmdlet\+::\+Cmd\+Container@{Get\+Repo\+Cmdlet\+::\+Cmd\+Container}}
+\subsubsection{\texorpdfstring{U\+RL}{URL}}
+{\footnotesize\ttfamily string Get\+Repo\+Cmdlet.\+Cmd\+Container.\+U\+RL\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}, {\ttfamily [package]}}
+
+
+
+Gets the github U\+RL. 
+
+The github U\+RL. 
+
+Definition at line 45 of file Get\+Repo\+Cmdlet.\+Objects.\+cs.
+
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_cmd_container_aa3c4d3c76b60c871e174d0e971c7b6d4}\label{class_get_repo_cmdlet_1_1_cmd_container_aa3c4d3c76b60c871e174d0e971c7b6d4}} 
+\index{Get\+Repo\+Cmdlet\+::\+Cmd\+Container@{Get\+Repo\+Cmdlet\+::\+Cmd\+Container}!V\+S\+Version@{V\+S\+Version}}
+\index{V\+S\+Version@{V\+S\+Version}!Get\+Repo\+Cmdlet\+::\+Cmd\+Container@{Get\+Repo\+Cmdlet\+::\+Cmd\+Container}}
+\subsubsection{\texorpdfstring{V\+S\+Version}{VSVersion}}
+{\footnotesize\ttfamily double Get\+Repo\+Cmdlet.\+Cmd\+Container.\+V\+S\+Version\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}, {\ttfamily [package]}}
+
+
+
+Gets the VS version requested for execution. 
+
+The VS version. {\ttfamily N\+U\+LL} indicates no version selected, and will open the default application. 
+
+Definition at line 78 of file Get\+Repo\+Cmdlet.\+Objects.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Get\+Repo\+Cmdlet/\mbox{\hyperlink{_get_repo_cmdlet_8_objects_8cs}{Get\+Repo\+Cmdlet.\+Objects.\+cs}}\end{DoxyCompactItemize}

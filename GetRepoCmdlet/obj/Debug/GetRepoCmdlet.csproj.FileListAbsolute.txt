@@ -1,0 +1,7 @@
+C:\Code\Code\GetRepoCmdlet\GetRepoCmdlet\bin\Debug\GetRepoCmdlet.dll
+C:\Code\Code\GetRepoCmdlet\GetRepoCmdlet\bin\Debug\GetRepoCmdlet.pdb
+C:\Code\Code\GetRepoCmdlet\GetRepoCmdlet\bin\Debug\System.Management.Automation.dll
+C:\Code\Code\GetRepoCmdlet\GetRepoCmdlet\obj\Debug\GetRepoCmdlet.csprojResolveAssemblyReference.cache
+C:\Code\Code\GetRepoCmdlet\GetRepoCmdlet\obj\Debug\GetRepoCmdlet.csproj.CoreCompileInputs.cache
+C:\Code\Code\GetRepoCmdlet\GetRepoCmdlet\obj\Debug\GetRepoCmdlet.dll
+C:\Code\Code\GetRepoCmdlet\GetRepoCmdlet\obj\Debug\GetRepoCmdlet.pdb

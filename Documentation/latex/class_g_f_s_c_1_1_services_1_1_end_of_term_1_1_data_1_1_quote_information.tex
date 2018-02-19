@@ -1,0 +1,260 @@
+\hypertarget{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information}{}\section{G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Quote\+Information Class Reference}
+\label{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information}\index{G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Quote\+Information@{G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Quote\+Information}}
+\subsection*{Static Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+static System.\+Data.\+Data\+Set \mbox{\hyperlink{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a9c790d1d15350cb153195562c0ee980a}{Calculate\+All\+Quotes}} (string Quoted\+By, string Quoted\+For, string Dealer\+ID, int Customer\+ID, string Asset\+I\+D\+List, string Is\+Partial\+List, bool Include\+Futures, bool Is\+Internal, bool Allow\+Upgrade\+To\+Keep, bool Allow\+Upgrade\+To\+Return, bool Allow\+Buyout\+To\+Keep\+Lessee, bool Allow\+Buyout\+To\+Keep\+Vendor, bool Allow\+Buyout\+To\+Return, string Comments, string Messages, bool Include\+Estimated\+Property\+Taxes)
+\item 
+static Data\+Set \mbox{\hyperlink{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a85918123c09ab5bd849b18fa44f781bd}{Get\+Quote\+Data}} (int Quote\+History\+ID, string Quote\+Type, bool Use\+Playground)
+\item 
+static Data\+Set \mbox{\hyperlink{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a73e205c52cf16b25509865336a39d754}{Get\+Quote\+History\+Data}} (int Quote\+History\+ID, bool Is\+Internal, bool Use\+Playground)
+\item 
+static Data\+Set \mbox{\hyperlink{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a3de8655f1cf1d8a6fe724955f29586e1}{Search\+Quote\+History}} (string Quote\+History\+ID, string Dealer\+Name, string Contract\+ID, string Customer\+ID, string Lessee\+Name, string Quote\+Amount, string Quote\+Date, bool Show\+All\+Quotes)
+\item 
+static bool \mbox{\hyperlink{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a43a6a2ecc5ac359238dd44b6963237b9}{Copy\+Detail\+To\+Playground}} (int Quote\+History\+ID)
+\item 
+static Data\+Set \mbox{\hyperlink{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a0e5236ce530e10804702d898444ac9dd}{Get\+Buyout\+Upgrade\+Quote\+Misc\+Data\+Info\+Zone}} (string Quote\+History\+ID, string Letter\+Type)
+\item 
+static Data\+Set \mbox{\hyperlink{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_ac1d04c2bec1af8d52c09b65c647338fe}{Get\+Buyout\+Upgrade\+Quote\+Misc\+Data\+Info\+Zone\+V2}} (string Quote\+History\+ID, string Letter\+Type)
+\item 
+static Data\+Set \mbox{\hyperlink{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_adf6c7cd656db3f19ae06c346c3871e45}{Get\+Future\+Misc}} (int Quote\+History\+ID, string Quote\+Type, string Contract\+ID, bool Use\+Playground)
+\item 
+static Data\+Set \mbox{\hyperlink{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_ae8c9d719072ec83ae5471f24f5836e03}{Get\+Misc\+Details}} (int Quote\+History\+ID, string Quote\+Type, string Contract\+ID, bool Use\+Playground)
+\item 
+static Data\+Set \mbox{\hyperlink{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_af23e4c60eddc00ad69542519fcff279d}{Get\+Property\+Tax\+G\+L\+Codes}} ()
+\item 
+static Data\+Set \mbox{\hyperlink{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a54a941b72cf95985c35e3e47171117d0}{Get\+Quote\+History\+Detail}} (int Quote\+History\+ID, string Quote\+Type, string Contract\+ID, bool Use\+Playground)
+\item 
+static bool \mbox{\hyperlink{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a031811de298c7cdd12b7376c6140c086}{Update\+Quote\+Data}} (int Quote\+History\+ID, string Quote\+Type, string Contract\+ID, string Field\+Name, string New\+Amount, bool Re\+Calc\+Tax)
+\item 
+static int \mbox{\hyperlink{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a9a349690fc9dd571ea69313d2dff0959}{Save\+Updated\+Quote\+Data}} (int Quote\+History\+ID, string New\+Quoted\+By, string New\+Quoted\+For, Date\+Time New\+Expiration\+Date, string New\+Comment)
+\item 
+static bool \mbox{\hyperlink{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_ae0868f4beb582bf840844a32099d6fdc}{Add\+Invoiced\+Charge}} (int Quote\+History\+ID, string Quote\+Type, string Contract\+ID, string G\+L\+Code, bool Payable\+To\+Dealer, string Payable\+To\+Dealer\+ID, string Description, string Due\+Date, decimal Amount, bool Charge\+Tax)
+\item 
+static bool \mbox{\hyperlink{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a9d542489165e7b3bd1d7e911e4d6e6ea}{Update\+Future\+Charge}} (int Quote\+History\+ID, string Quote\+Type, string Contract\+ID, string Misc\+Key, string Misc\+First\+Pymt\+Date, string Field\+Name, string New\+Amount, int? Asset\+ID, bool Re\+Calc\+Tax)
+\item 
+static bool \mbox{\hyperlink{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a9412b7298900ccc6703fc64cc20d4af7}{Update\+Invoiced\+Charge}} (int Quote\+History\+ID, string Quote\+Type, string Contract\+ID, string Misc\+ID, string Field\+Name, string New\+Amount, int? Asset\+ID, bool Re\+Calc\+Tax)
+\item 
+static bool \mbox{\hyperlink{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_add6fc3465c4dd7ebe30f079bcf710377}{Change\+Include\+Quote}} (int Quote\+History\+ID, string Quote\+Type)
+\item 
+static Data\+Set \mbox{\hyperlink{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_af4d75a44c56859971bf0b3e3a76b44b6}{Commit\+Quote}} (int Quote\+History\+ID, string Quote\+Type)
+\item 
+static bool \mbox{\hyperlink{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a06e50e3c886696c1026ff2358b028e70}{Un\+Commit\+Quote}} (int Quote\+History\+ID)
+\item 
+static Data\+Set \mbox{\hyperlink{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a23cfe29495af76c3c84555a2231919a4}{Get\+Quote\+Messages}} (int Quote\+History\+ID)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file Quote\+Information.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_ae0868f4beb582bf840844a32099d6fdc}\label{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_ae0868f4beb582bf840844a32099d6fdc}} 
+\index{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}!Add\+Invoiced\+Charge@{Add\+Invoiced\+Charge}}
+\index{Add\+Invoiced\+Charge@{Add\+Invoiced\+Charge}!G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}}
+\subsubsection{\texorpdfstring{Add\+Invoiced\+Charge()}{AddInvoicedCharge()}}
+{\footnotesize\ttfamily static bool G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Quote\+Information.\+Add\+Invoiced\+Charge (\begin{DoxyParamCaption}\item[{int}]{Quote\+History\+ID,  }\item[{string}]{Quote\+Type,  }\item[{string}]{Contract\+ID,  }\item[{string}]{G\+L\+Code,  }\item[{bool}]{Payable\+To\+Dealer,  }\item[{string}]{Payable\+To\+Dealer\+ID,  }\item[{string}]{Description,  }\item[{string}]{Due\+Date,  }\item[{decimal}]{Amount,  }\item[{bool}]{Charge\+Tax }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definition at line 606 of file Quote\+Information.\+cs.
+
+\mbox{\Hypertarget{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a9c790d1d15350cb153195562c0ee980a}\label{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a9c790d1d15350cb153195562c0ee980a}} 
+\index{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}!Calculate\+All\+Quotes@{Calculate\+All\+Quotes}}
+\index{Calculate\+All\+Quotes@{Calculate\+All\+Quotes}!G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}}
+\subsubsection{\texorpdfstring{Calculate\+All\+Quotes()}{CalculateAllQuotes()}}
+{\footnotesize\ttfamily static System.\+Data.\+Data\+Set G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Quote\+Information.\+Calculate\+All\+Quotes (\begin{DoxyParamCaption}\item[{string}]{Quoted\+By,  }\item[{string}]{Quoted\+For,  }\item[{string}]{Dealer\+ID,  }\item[{int}]{Customer\+ID,  }\item[{string}]{Asset\+I\+D\+List,  }\item[{string}]{Is\+Partial\+List,  }\item[{bool}]{Include\+Futures,  }\item[{bool}]{Is\+Internal,  }\item[{bool}]{Allow\+Upgrade\+To\+Keep,  }\item[{bool}]{Allow\+Upgrade\+To\+Return,  }\item[{bool}]{Allow\+Buyout\+To\+Keep\+Lessee,  }\item[{bool}]{Allow\+Buyout\+To\+Keep\+Vendor,  }\item[{bool}]{Allow\+Buyout\+To\+Return,  }\item[{string}]{Comments,  }\item[{string}]{Messages,  }\item[{bool}]{Include\+Estimated\+Property\+Taxes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definition at line 13 of file Quote\+Information.\+cs.
+
+\mbox{\Hypertarget{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_add6fc3465c4dd7ebe30f079bcf710377}\label{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_add6fc3465c4dd7ebe30f079bcf710377}} 
+\index{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}!Change\+Include\+Quote@{Change\+Include\+Quote}}
+\index{Change\+Include\+Quote@{Change\+Include\+Quote}!G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}}
+\subsubsection{\texorpdfstring{Change\+Include\+Quote()}{ChangeIncludeQuote()}}
+{\footnotesize\ttfamily static bool G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Quote\+Information.\+Change\+Include\+Quote (\begin{DoxyParamCaption}\item[{int}]{Quote\+History\+ID,  }\item[{string}]{Quote\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definition at line 760 of file Quote\+Information.\+cs.
+
+\mbox{\Hypertarget{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_af4d75a44c56859971bf0b3e3a76b44b6}\label{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_af4d75a44c56859971bf0b3e3a76b44b6}} 
+\index{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}!Commit\+Quote@{Commit\+Quote}}
+\index{Commit\+Quote@{Commit\+Quote}!G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}}
+\subsubsection{\texorpdfstring{Commit\+Quote()}{CommitQuote()}}
+{\footnotesize\ttfamily static Data\+Set G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Quote\+Information.\+Commit\+Quote (\begin{DoxyParamCaption}\item[{int}]{Quote\+History\+ID,  }\item[{string}]{Quote\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definition at line 794 of file Quote\+Information.\+cs.
+
+\mbox{\Hypertarget{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a43a6a2ecc5ac359238dd44b6963237b9}\label{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a43a6a2ecc5ac359238dd44b6963237b9}} 
+\index{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}!Copy\+Detail\+To\+Playground@{Copy\+Detail\+To\+Playground}}
+\index{Copy\+Detail\+To\+Playground@{Copy\+Detail\+To\+Playground}!G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}}
+\subsubsection{\texorpdfstring{Copy\+Detail\+To\+Playground()}{CopyDetailToPlayground()}}
+{\footnotesize\ttfamily static bool G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Quote\+Information.\+Copy\+Detail\+To\+Playground (\begin{DoxyParamCaption}\item[{int}]{Quote\+History\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definition at line 190 of file Quote\+Information.\+cs.
+
+\mbox{\Hypertarget{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a0e5236ce530e10804702d898444ac9dd}\label{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a0e5236ce530e10804702d898444ac9dd}} 
+\index{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}!Get\+Buyout\+Upgrade\+Quote\+Misc\+Data\+Info\+Zone@{Get\+Buyout\+Upgrade\+Quote\+Misc\+Data\+Info\+Zone}}
+\index{Get\+Buyout\+Upgrade\+Quote\+Misc\+Data\+Info\+Zone@{Get\+Buyout\+Upgrade\+Quote\+Misc\+Data\+Info\+Zone}!G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}}
+\subsubsection{\texorpdfstring{Get\+Buyout\+Upgrade\+Quote\+Misc\+Data\+Info\+Zone()}{GetBuyoutUpgradeQuoteMiscDataInfoZone()}}
+{\footnotesize\ttfamily static Data\+Set G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Quote\+Information.\+Get\+Buyout\+Upgrade\+Quote\+Misc\+Data\+Info\+Zone (\begin{DoxyParamCaption}\item[{string}]{Quote\+History\+ID,  }\item[{string}]{Letter\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definition at line 222 of file Quote\+Information.\+cs.
+
+\mbox{\Hypertarget{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_ac1d04c2bec1af8d52c09b65c647338fe}\label{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_ac1d04c2bec1af8d52c09b65c647338fe}} 
+\index{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}!Get\+Buyout\+Upgrade\+Quote\+Misc\+Data\+Info\+Zone\+V2@{Get\+Buyout\+Upgrade\+Quote\+Misc\+Data\+Info\+Zone\+V2}}
+\index{Get\+Buyout\+Upgrade\+Quote\+Misc\+Data\+Info\+Zone\+V2@{Get\+Buyout\+Upgrade\+Quote\+Misc\+Data\+Info\+Zone\+V2}!G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}}
+\subsubsection{\texorpdfstring{Get\+Buyout\+Upgrade\+Quote\+Misc\+Data\+Info\+Zone\+V2()}{GetBuyoutUpgradeQuoteMiscDataInfoZoneV2()}}
+{\footnotesize\ttfamily static Data\+Set G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Quote\+Information.\+Get\+Buyout\+Upgrade\+Quote\+Misc\+Data\+Info\+Zone\+V2 (\begin{DoxyParamCaption}\item[{string}]{Quote\+History\+ID,  }\item[{string}]{Letter\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definition at line 257 of file Quote\+Information.\+cs.
+
+\mbox{\Hypertarget{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_adf6c7cd656db3f19ae06c346c3871e45}\label{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_adf6c7cd656db3f19ae06c346c3871e45}} 
+\index{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}!Get\+Future\+Misc@{Get\+Future\+Misc}}
+\index{Get\+Future\+Misc@{Get\+Future\+Misc}!G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}}
+\subsubsection{\texorpdfstring{Get\+Future\+Misc()}{GetFutureMisc()}}
+{\footnotesize\ttfamily static Data\+Set G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Quote\+Information.\+Get\+Future\+Misc (\begin{DoxyParamCaption}\item[{int}]{Quote\+History\+ID,  }\item[{string}]{Quote\+Type,  }\item[{string}]{Contract\+ID,  }\item[{bool}]{Use\+Playground }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definition at line 293 of file Quote\+Information.\+cs.
+
+\mbox{\Hypertarget{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_ae8c9d719072ec83ae5471f24f5836e03}\label{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_ae8c9d719072ec83ae5471f24f5836e03}} 
+\index{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}!Get\+Misc\+Details@{Get\+Misc\+Details}}
+\index{Get\+Misc\+Details@{Get\+Misc\+Details}!G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}}
+\subsubsection{\texorpdfstring{Get\+Misc\+Details()}{GetMiscDetails()}}
+{\footnotesize\ttfamily static Data\+Set G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Quote\+Information.\+Get\+Misc\+Details (\begin{DoxyParamCaption}\item[{int}]{Quote\+History\+ID,  }\item[{string}]{Quote\+Type,  }\item[{string}]{Contract\+ID,  }\item[{bool}]{Use\+Playground }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definition at line 332 of file Quote\+Information.\+cs.
+
+\mbox{\Hypertarget{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_af23e4c60eddc00ad69542519fcff279d}\label{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_af23e4c60eddc00ad69542519fcff279d}} 
+\index{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}!Get\+Property\+Tax\+G\+L\+Codes@{Get\+Property\+Tax\+G\+L\+Codes}}
+\index{Get\+Property\+Tax\+G\+L\+Codes@{Get\+Property\+Tax\+G\+L\+Codes}!G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}}
+\subsubsection{\texorpdfstring{Get\+Property\+Tax\+G\+L\+Codes()}{GetPropertyTaxGLCodes()}}
+{\footnotesize\ttfamily static Data\+Set G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Quote\+Information.\+Get\+Property\+Tax\+G\+L\+Codes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definition at line 371 of file Quote\+Information.\+cs.
+
+\mbox{\Hypertarget{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a85918123c09ab5bd849b18fa44f781bd}\label{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a85918123c09ab5bd849b18fa44f781bd}} 
+\index{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}!Get\+Quote\+Data@{Get\+Quote\+Data}}
+\index{Get\+Quote\+Data@{Get\+Quote\+Data}!G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}}
+\subsubsection{\texorpdfstring{Get\+Quote\+Data()}{GetQuoteData()}}
+{\footnotesize\ttfamily static Data\+Set G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Quote\+Information.\+Get\+Quote\+Data (\begin{DoxyParamCaption}\item[{int}]{Quote\+History\+ID,  }\item[{string}]{Quote\+Type,  }\item[{bool}]{Use\+Playground }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definition at line 76 of file Quote\+Information.\+cs.
+
+\mbox{\Hypertarget{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a73e205c52cf16b25509865336a39d754}\label{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a73e205c52cf16b25509865336a39d754}} 
+\index{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}!Get\+Quote\+History\+Data@{Get\+Quote\+History\+Data}}
+\index{Get\+Quote\+History\+Data@{Get\+Quote\+History\+Data}!G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}}
+\subsubsection{\texorpdfstring{Get\+Quote\+History\+Data()}{GetQuoteHistoryData()}}
+{\footnotesize\ttfamily static Data\+Set G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Quote\+Information.\+Get\+Quote\+History\+Data (\begin{DoxyParamCaption}\item[{int}]{Quote\+History\+ID,  }\item[{bool}]{Is\+Internal,  }\item[{bool}]{Use\+Playground }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definition at line 111 of file Quote\+Information.\+cs.
+
+\mbox{\Hypertarget{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a54a941b72cf95985c35e3e47171117d0}\label{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a54a941b72cf95985c35e3e47171117d0}} 
+\index{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}!Get\+Quote\+History\+Detail@{Get\+Quote\+History\+Detail}}
+\index{Get\+Quote\+History\+Detail@{Get\+Quote\+History\+Detail}!G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}}
+\subsubsection{\texorpdfstring{Get\+Quote\+History\+Detail()}{GetQuoteHistoryDetail()}}
+{\footnotesize\ttfamily static Data\+Set G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Quote\+Information.\+Get\+Quote\+History\+Detail (\begin{DoxyParamCaption}\item[{int}]{Quote\+History\+ID,  }\item[{string}]{Quote\+Type,  }\item[{string}]{Contract\+ID,  }\item[{bool}]{Use\+Playground }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definition at line 399 of file Quote\+Information.\+cs.
+
+\mbox{\Hypertarget{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a23cfe29495af76c3c84555a2231919a4}\label{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a23cfe29495af76c3c84555a2231919a4}} 
+\index{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}!Get\+Quote\+Messages@{Get\+Quote\+Messages}}
+\index{Get\+Quote\+Messages@{Get\+Quote\+Messages}!G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}}
+\subsubsection{\texorpdfstring{Get\+Quote\+Messages()}{GetQuoteMessages()}}
+{\footnotesize\ttfamily static Data\+Set G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Quote\+Information.\+Get\+Quote\+Messages (\begin{DoxyParamCaption}\item[{int}]{Quote\+History\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definition at line 861 of file Quote\+Information.\+cs.
+
+\mbox{\Hypertarget{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a9a349690fc9dd571ea69313d2dff0959}\label{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a9a349690fc9dd571ea69313d2dff0959}} 
+\index{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}!Save\+Updated\+Quote\+Data@{Save\+Updated\+Quote\+Data}}
+\index{Save\+Updated\+Quote\+Data@{Save\+Updated\+Quote\+Data}!G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}}
+\subsubsection{\texorpdfstring{Save\+Updated\+Quote\+Data()}{SaveUpdatedQuoteData()}}
+{\footnotesize\ttfamily static int G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Quote\+Information.\+Save\+Updated\+Quote\+Data (\begin{DoxyParamCaption}\item[{int}]{Quote\+History\+ID,  }\item[{string}]{New\+Quoted\+By,  }\item[{string}]{New\+Quoted\+For,  }\item[{Date\+Time}]{New\+Expiration\+Date,  }\item[{string}]{New\+Comment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definition at line 563 of file Quote\+Information.\+cs.
+
+\mbox{\Hypertarget{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a3de8655f1cf1d8a6fe724955f29586e1}\label{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a3de8655f1cf1d8a6fe724955f29586e1}} 
+\index{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}!Search\+Quote\+History@{Search\+Quote\+History}}
+\index{Search\+Quote\+History@{Search\+Quote\+History}!G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}}
+\subsubsection{\texorpdfstring{Search\+Quote\+History()}{SearchQuoteHistory()}}
+{\footnotesize\ttfamily static Data\+Set G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Quote\+Information.\+Search\+Quote\+History (\begin{DoxyParamCaption}\item[{string}]{Quote\+History\+ID,  }\item[{string}]{Dealer\+Name,  }\item[{string}]{Contract\+ID,  }\item[{string}]{Customer\+ID,  }\item[{string}]{Lessee\+Name,  }\item[{string}]{Quote\+Amount,  }\item[{string}]{Quote\+Date,  }\item[{bool}]{Show\+All\+Quotes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definition at line 145 of file Quote\+Information.\+cs.
+
+\mbox{\Hypertarget{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a06e50e3c886696c1026ff2358b028e70}\label{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a06e50e3c886696c1026ff2358b028e70}} 
+\index{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}!Un\+Commit\+Quote@{Un\+Commit\+Quote}}
+\index{Un\+Commit\+Quote@{Un\+Commit\+Quote}!G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}}
+\subsubsection{\texorpdfstring{Un\+Commit\+Quote()}{UnCommitQuote()}}
+{\footnotesize\ttfamily static bool G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Quote\+Information.\+Un\+Commit\+Quote (\begin{DoxyParamCaption}\item[{int}]{Quote\+History\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definition at line 829 of file Quote\+Information.\+cs.
+
+\mbox{\Hypertarget{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a9d542489165e7b3bd1d7e911e4d6e6ea}\label{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a9d542489165e7b3bd1d7e911e4d6e6ea}} 
+\index{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}!Update\+Future\+Charge@{Update\+Future\+Charge}}
+\index{Update\+Future\+Charge@{Update\+Future\+Charge}!G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}}
+\subsubsection{\texorpdfstring{Update\+Future\+Charge()}{UpdateFutureCharge()}}
+{\footnotesize\ttfamily static bool G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Quote\+Information.\+Update\+Future\+Charge (\begin{DoxyParamCaption}\item[{int}]{Quote\+History\+ID,  }\item[{string}]{Quote\+Type,  }\item[{string}]{Contract\+ID,  }\item[{string}]{Misc\+Key,  }\item[{string}]{Misc\+First\+Pymt\+Date,  }\item[{string}]{Field\+Name,  }\item[{string}]{New\+Amount,  }\item[{int?}]{Asset\+ID,  }\item[{bool}]{Re\+Calc\+Tax }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definition at line 656 of file Quote\+Information.\+cs.
+
+\mbox{\Hypertarget{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a9412b7298900ccc6703fc64cc20d4af7}\label{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a9412b7298900ccc6703fc64cc20d4af7}} 
+\index{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}!Update\+Invoiced\+Charge@{Update\+Invoiced\+Charge}}
+\index{Update\+Invoiced\+Charge@{Update\+Invoiced\+Charge}!G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}}
+\subsubsection{\texorpdfstring{Update\+Invoiced\+Charge()}{UpdateInvoicedCharge()}}
+{\footnotesize\ttfamily static bool G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Quote\+Information.\+Update\+Invoiced\+Charge (\begin{DoxyParamCaption}\item[{int}]{Quote\+History\+ID,  }\item[{string}]{Quote\+Type,  }\item[{string}]{Contract\+ID,  }\item[{string}]{Misc\+ID,  }\item[{string}]{Field\+Name,  }\item[{string}]{New\+Amount,  }\item[{int?}]{Asset\+ID,  }\item[{bool}]{Re\+Calc\+Tax }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definition at line 709 of file Quote\+Information.\+cs.
+
+\mbox{\Hypertarget{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a031811de298c7cdd12b7376c6140c086}\label{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information_a031811de298c7cdd12b7376c6140c086}} 
+\index{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}!Update\+Quote\+Data@{Update\+Quote\+Data}}
+\index{Update\+Quote\+Data@{Update\+Quote\+Data}!G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Quote\+Information}}
+\subsubsection{\texorpdfstring{Update\+Quote\+Data()}{UpdateQuoteData()}}
+{\footnotesize\ttfamily static bool G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Quote\+Information.\+Update\+Quote\+Data (\begin{DoxyParamCaption}\item[{int}]{Quote\+History\+ID,  }\item[{string}]{Quote\+Type,  }\item[{string}]{Contract\+ID,  }\item[{string}]{Field\+Name,  }\item[{string}]{New\+Amount,  }\item[{bool}]{Re\+Calc\+Tax }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definition at line 477 of file Quote\+Information.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Get\+Repo\+Cmdlet/bin/\+Debug/\+G\+F\+S\+C.\+Services.\+End\+Of\+Term/\+G\+F\+S\+C.\+Services.\+End\+Of\+Term/\+Data/\mbox{\hyperlink{_data_2_quote_information_8cs}{Quote\+Information.\+cs}}\end{DoxyCompactItemize}

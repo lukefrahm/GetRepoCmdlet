@@ -1,0 +1,83 @@
+\hypertarget{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_unpaid_open_item_information}{}\section{G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Unpaid\+Open\+Item\+Information Class Reference}
+\label{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_unpaid_open_item_information}\index{G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Unpaid\+Open\+Item\+Information@{G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Unpaid\+Open\+Item\+Information}}
+\subsection*{Static Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_unpaid_open_item_information_a6bcc624028be7618f55368db0d27ed5a}{Get\+Contracts\+From\+Assets}} (string Asset\+I\+D\+List)
+\item 
+static bool \mbox{\hyperlink{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_unpaid_open_item_information_a716ea6460e07f9d3936d54d69d2f00b1}{Insert\+Unpaid\+Sales\+Tax}} (string Contract\+ID, double Unpaid\+Sales\+Tax)
+\item 
+static string \mbox{\hyperlink{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_unpaid_open_item_information_ae467602ba9e152085874044bda6d5a3f}{Get\+Open\+Item\+X\+ML}} (string Contract\+ID)
+\item 
+static double \mbox{\hyperlink{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_unpaid_open_item_information_af45ce3ac375408f7e9807780a46d7c4e}{Calculate\+Unpaid\+Sales\+Tax}} (string Open\+Item\+Xml)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_unpaid_open_item_information_a3dccdd2f92498cbf0dd25a4009e16f53}{Calculate\+Unpaid\+Sales\+Tax}} (double Tax\+Rate, double Outstanding\+Balance, string Tax\+Outstanding\+Balance)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file Unpaid\+Open\+Item\+Information.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_unpaid_open_item_information_af45ce3ac375408f7e9807780a46d7c4e}\label{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_unpaid_open_item_information_af45ce3ac375408f7e9807780a46d7c4e}} 
+\index{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Unpaid\+Open\+Item\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Unpaid\+Open\+Item\+Information}!Calculate\+Unpaid\+Sales\+Tax@{Calculate\+Unpaid\+Sales\+Tax}}
+\index{Calculate\+Unpaid\+Sales\+Tax@{Calculate\+Unpaid\+Sales\+Tax}!G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Unpaid\+Open\+Item\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Unpaid\+Open\+Item\+Information}}
+\subsubsection{\texorpdfstring{Calculate\+Unpaid\+Sales\+Tax()}{CalculateUnpaidSalesTax()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static double G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Unpaid\+Open\+Item\+Information.\+Calculate\+Unpaid\+Sales\+Tax (\begin{DoxyParamCaption}\item[{string}]{Open\+Item\+Xml }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definition at line 109 of file Unpaid\+Open\+Item\+Information.\+cs.
+
+\mbox{\Hypertarget{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_unpaid_open_item_information_a3dccdd2f92498cbf0dd25a4009e16f53}\label{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_unpaid_open_item_information_a3dccdd2f92498cbf0dd25a4009e16f53}} 
+\index{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Unpaid\+Open\+Item\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Unpaid\+Open\+Item\+Information}!Calculate\+Unpaid\+Sales\+Tax@{Calculate\+Unpaid\+Sales\+Tax}}
+\index{Calculate\+Unpaid\+Sales\+Tax@{Calculate\+Unpaid\+Sales\+Tax}!G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Unpaid\+Open\+Item\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Unpaid\+Open\+Item\+Information}}
+\subsubsection{\texorpdfstring{Calculate\+Unpaid\+Sales\+Tax()}{CalculateUnpaidSalesTax()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static double G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Unpaid\+Open\+Item\+Information.\+Calculate\+Unpaid\+Sales\+Tax (\begin{DoxyParamCaption}\item[{double}]{Tax\+Rate,  }\item[{double}]{Outstanding\+Balance,  }\item[{string}]{Tax\+Outstanding\+Balance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 205 of file Unpaid\+Open\+Item\+Information.\+cs.
+
+\mbox{\Hypertarget{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_unpaid_open_item_information_a6bcc624028be7618f55368db0d27ed5a}\label{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_unpaid_open_item_information_a6bcc624028be7618f55368db0d27ed5a}} 
+\index{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Unpaid\+Open\+Item\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Unpaid\+Open\+Item\+Information}!Get\+Contracts\+From\+Assets@{Get\+Contracts\+From\+Assets}}
+\index{Get\+Contracts\+From\+Assets@{Get\+Contracts\+From\+Assets}!G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Unpaid\+Open\+Item\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Unpaid\+Open\+Item\+Information}}
+\subsubsection{\texorpdfstring{Get\+Contracts\+From\+Assets()}{GetContractsFromAssets()}}
+{\footnotesize\ttfamily static string G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Unpaid\+Open\+Item\+Information.\+Get\+Contracts\+From\+Assets (\begin{DoxyParamCaption}\item[{string}]{Asset\+I\+D\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definition at line 18 of file Unpaid\+Open\+Item\+Information.\+cs.
+
+\mbox{\Hypertarget{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_unpaid_open_item_information_ae467602ba9e152085874044bda6d5a3f}\label{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_unpaid_open_item_information_ae467602ba9e152085874044bda6d5a3f}} 
+\index{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Unpaid\+Open\+Item\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Unpaid\+Open\+Item\+Information}!Get\+Open\+Item\+X\+ML@{Get\+Open\+Item\+X\+ML}}
+\index{Get\+Open\+Item\+X\+ML@{Get\+Open\+Item\+X\+ML}!G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Unpaid\+Open\+Item\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Unpaid\+Open\+Item\+Information}}
+\subsubsection{\texorpdfstring{Get\+Open\+Item\+X\+M\+L()}{GetOpenItemXML()}}
+{\footnotesize\ttfamily static string G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Unpaid\+Open\+Item\+Information.\+Get\+Open\+Item\+X\+ML (\begin{DoxyParamCaption}\item[{string}]{Contract\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definition at line 87 of file Unpaid\+Open\+Item\+Information.\+cs.
+
+\mbox{\Hypertarget{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_unpaid_open_item_information_a716ea6460e07f9d3936d54d69d2f00b1}\label{class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_unpaid_open_item_information_a716ea6460e07f9d3936d54d69d2f00b1}} 
+\index{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Unpaid\+Open\+Item\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Unpaid\+Open\+Item\+Information}!Insert\+Unpaid\+Sales\+Tax@{Insert\+Unpaid\+Sales\+Tax}}
+\index{Insert\+Unpaid\+Sales\+Tax@{Insert\+Unpaid\+Sales\+Tax}!G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Unpaid\+Open\+Item\+Information@{G\+F\+S\+C\+::\+Services\+::\+End\+Of\+Term\+::\+Data\+::\+Unpaid\+Open\+Item\+Information}}
+\subsubsection{\texorpdfstring{Insert\+Unpaid\+Sales\+Tax()}{InsertUnpaidSalesTax()}}
+{\footnotesize\ttfamily static bool G\+F\+S\+C.\+Services.\+End\+Of\+Term.\+Data.\+Unpaid\+Open\+Item\+Information.\+Insert\+Unpaid\+Sales\+Tax (\begin{DoxyParamCaption}\item[{string}]{Contract\+ID,  }\item[{double}]{Unpaid\+Sales\+Tax }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definition at line 52 of file Unpaid\+Open\+Item\+Information.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Get\+Repo\+Cmdlet/bin/\+Debug/\+G\+F\+S\+C.\+Services.\+End\+Of\+Term/\+G\+F\+S\+C.\+Services.\+End\+Of\+Term/\+Data/\mbox{\hyperlink{_unpaid_open_item_information_8cs}{Unpaid\+Open\+Item\+Information.\+cs}}\end{DoxyCompactItemize}

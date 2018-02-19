@@ -1,0 +1,299 @@
+\hypertarget{class_get_repo_cmdlet_1_1_get_repo_cmdlet}{}\section{Get\+Repo\+Cmdlet.\+Get\+Repo\+Cmdlet Class Reference}
+\label{class_get_repo_cmdlet_1_1_get_repo_cmdlet}\index{Get\+Repo\+Cmdlet.\+Get\+Repo\+Cmdlet@{Get\+Repo\+Cmdlet.\+Get\+Repo\+Cmdlet}}
+
+
+Cmdlet definition class to create Get-\/\+Repo cmdlet.  
+
+
+Inheritance diagram for Get\+Repo\+Cmdlet.\+Get\+Repo\+Cmdlet\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_get_repo_cmdlet_1_1_get_repo_cmdlet}
+\end{center}
+\end{figure}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_get_repo_cmdlet_1_1_get_repo_cmdlet_a22503338cdb62a648a848cd8fcbf7769}{Begin\+Processing}} ()
+\begin{DoxyCompactList}\small\item\em Override of the base method for \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_get_repo_cmdlet_1_1_get_repo_cmdlet_ada76037eb2a8eed81eb1bb7a21d84693}{Process\+Record}} ()
+\begin{DoxyCompactList}\small\item\em Override of the base method for \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_get_repo_cmdlet_1_1_get_repo_cmdlet_a0968e20b2c03f033c93c2a74c643d06b}{End\+Processing}} ()
+\begin{DoxyCompactList}\small\item\em Override of the base method for \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_get_repo_cmdlet_1_1_get_repo_cmdlet_ab8b0954fb74d52faa018ff0b721f7291}{Git\+Repo}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Accepts the mandatory parameter to declare the git repo. Accepts both a properly formed U\+RL to a git repo, or a repo name that is a part of the Great\+America collection. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_get_repo_cmdlet_1_1_get_repo_cmdlet_ac98a9c9f16239f0dfd0d3649a79a66e5}{Branch}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Defines a specific branch to clone. Must be a pre-\/existing branch. \end{DoxyCompactList}\item 
+Switch\+Parameter \mbox{\hyperlink{class_get_repo_cmdlet_1_1_get_repo_cmdlet_a11300c987e6547a3282664b6ff3c02d3}{Stop\+Execute}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Parameter flag that stops execution after git command. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_get_repo_cmdlet_1_1_get_repo_cmdlet_a0fb47dd1e2551b3883abaacf1c94057c}{V\+S\+Version}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Parameter that collects the version/year of the VS to be used in launching the program. \end{DoxyCompactList}\item 
+Switch\+Parameter \mbox{\hyperlink{class_get_repo_cmdlet_1_1_get_repo_cmdlet_a9e8a15001d9ad8bc691ebfb75a7a5993}{Exit}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Parameter flag that closes the PS instance after completing processing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_get_repo_cmdlet_1_1_get_repo_cmdlet_a6d4524a1c3d700585b10ba0f0a6ec157}{Execute\+Git}} ()
+\begin{DoxyCompactList}\small\item\em Executes and completes execution of necessary git commands. Process is created to run in parallel, and uses async calls to print execution messages back to the invoking PS instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_get_repo_cmdlet_1_1_get_repo_cmdlet_afe285942efc86534f71f64c78fbb2445}{Write\+Fail\+Message}} (string message)
+\begin{DoxyCompactList}\small\item\em Writes the passed failure message to the cmd prompt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_get_repo_cmdlet_1_1_get_repo_cmdlet_abd3278e2a9e0b1a3ac95dfee3eeb6bdc}{Write\+Warning\+Message}} (string message)
+\begin{DoxyCompactList}\small\item\em Writes the passed warning message to cmd prompt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_get_repo_cmdlet_1_1_get_repo_cmdlet_aabc925069bb0855f2cd1e07ae832b44a}{Write\+Information\+Message}} (string message)
+\begin{DoxyCompactList}\small\item\em Writes the passed information message to cmd prompt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_get_repo_cmdlet_1_1_cmd_container}{Cmd\+Container}} \mbox{\hyperlink{class_get_repo_cmdlet_1_1_get_repo_cmdlet_a822f61308706124cb1f17d9cd1af1092}{\+\_\+cmd\+Container}}
+\begin{DoxyCompactList}\small\item\em Instance variable to hold parameters and processing information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Cmdlet definition class to create Get-\/\+Repo cmdlet. 
+
+
+
+Definition at line 15 of file Get\+Repo\+Cmdlet.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_get_repo_cmdlet_a22503338cdb62a648a848cd8fcbf7769}\label{class_get_repo_cmdlet_1_1_get_repo_cmdlet_a22503338cdb62a648a848cd8fcbf7769}} 
+\index{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet@{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet}!Begin\+Processing@{Begin\+Processing}}
+\index{Begin\+Processing@{Begin\+Processing}!Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet@{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet}}
+\subsubsection{\texorpdfstring{Begin\+Processing()}{BeginProcessing()}}
+{\footnotesize\ttfamily override void Get\+Repo\+Cmdlet.\+Get\+Repo\+Cmdlet.\+Begin\+Processing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Override of the base method for 
+
+{\ttfamily \mbox{\hyperlink{class_get_repo_cmdlet_1_1_get_repo_cmdlet_a22503338cdb62a648a848cd8fcbf7769}{Begin\+Processing()}}}. This override method handles instantiation and preparation of the passed information in the command. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_get_repo_cmdlet_1_1_invalid_git_repo_exception}{Invalid\+Git\+Repo\+Exception}}} & Invalid git parameter entry will trigger this exception and halt the command. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+Git\+Param\+Type, \mbox{\hyperlink{class_get_repo_cmdlet_1_1_processor_a0fba012ba15720a0fcd419c44b757c5b}{Processor.\+Validate\+Git\+Param(string)}}, \mbox{\hyperlink{class_get_repo_cmdlet_1_1_cmd_container}{Cmd\+Container}}
+
+
+\end{DoxySeeAlso}
+
+
+Definition at line 95 of file Get\+Repo\+Cmdlet.\+cs.
+
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_get_repo_cmdlet_a0968e20b2c03f033c93c2a74c643d06b}\label{class_get_repo_cmdlet_1_1_get_repo_cmdlet_a0968e20b2c03f033c93c2a74c643d06b}} 
+\index{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet@{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet}!End\+Processing@{End\+Processing}}
+\index{End\+Processing@{End\+Processing}!Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet@{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet}}
+\subsubsection{\texorpdfstring{End\+Processing()}{EndProcessing()}}
+{\footnotesize\ttfamily override void Get\+Repo\+Cmdlet.\+Get\+Repo\+Cmdlet.\+End\+Processing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Override of the base method for 
+
+{\ttfamily \mbox{\hyperlink{class_get_repo_cmdlet_1_1_get_repo_cmdlet_a0968e20b2c03f033c93c2a74c643d06b}{End\+Processing()}}}. Handles closeout logic, and how to handle the PS command window instance. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_get_repo_cmdlet_1_1_cmd_container}{Cmd\+Container}}
+
+
+\end{DoxySeeAlso}
+
+
+Definition at line 189 of file Get\+Repo\+Cmdlet.\+cs.
+
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_get_repo_cmdlet_a6d4524a1c3d700585b10ba0f0a6ec157}\label{class_get_repo_cmdlet_1_1_get_repo_cmdlet_a6d4524a1c3d700585b10ba0f0a6ec157}} 
+\index{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet@{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet}!Execute\+Git@{Execute\+Git}}
+\index{Execute\+Git@{Execute\+Git}!Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet@{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet}}
+\subsubsection{\texorpdfstring{Execute\+Git()}{ExecuteGit()}}
+{\footnotesize\ttfamily void Get\+Repo\+Cmdlet.\+Get\+Repo\+Cmdlet.\+Execute\+Git (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Executes and completes execution of necessary git commands. Process is created to run in parallel, and uses async calls to print execution messages back to the invoking PS instance. 
+
+
+
+Definition at line 204 of file Get\+Repo\+Cmdlet.\+cs.
+
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_get_repo_cmdlet_ada76037eb2a8eed81eb1bb7a21d84693}\label{class_get_repo_cmdlet_1_1_get_repo_cmdlet_ada76037eb2a8eed81eb1bb7a21d84693}} 
+\index{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet@{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet}!Process\+Record@{Process\+Record}}
+\index{Process\+Record@{Process\+Record}!Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet@{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet}}
+\subsubsection{\texorpdfstring{Process\+Record()}{ProcessRecord()}}
+{\footnotesize\ttfamily override void Get\+Repo\+Cmdlet.\+Get\+Repo\+Cmdlet.\+Process\+Record (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Override of the base method for 
+
+{\ttfamily \mbox{\hyperlink{class_get_repo_cmdlet_1_1_get_repo_cmdlet_ada76037eb2a8eed81eb1bb7a21d84693}{Process\+Record()}}}. This override method handles delegating all processing work to the \mbox{\hyperlink{class_get_repo_cmdlet_1_1_processor}{Processor}} class. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_get_repo_cmdlet_1_1_processor_ace9c1d574b3758f94c8cf65e7fcddbf3}{Processor.\+Check\+For\+Existing\+Directory(string)}}, Processor.\+Backup\+Directory(string, string, string), \mbox{\hyperlink{class_get_repo_cmdlet_1_1_processor_ae5f7bb67f8595174379a2cb144ae22c3}{Processor.\+Delete\+Directory(string)}}, \mbox{\hyperlink{class_get_repo_cmdlet_1_1_processor_a9c532782d2575d5244440407103b4352}{Processor.\+Prepare\+Git\+Cmd(\+Git\+Command, string, string)}}, \mbox{\hyperlink{class_get_repo_cmdlet_1_1_processor_a0d3e38fbd41a8e6bdfbc62dcf4656e90}{Processor.\+Launch\+V\+S(\+Cmd\+Container)}}, \mbox{\hyperlink{class_get_repo_cmdlet_1_1_cmd_container}{Cmd\+Container}}
+
+
+\end{DoxySeeAlso}
+
+
+Definition at line 131 of file Get\+Repo\+Cmdlet.\+cs.
+
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_get_repo_cmdlet_afe285942efc86534f71f64c78fbb2445}\label{class_get_repo_cmdlet_1_1_get_repo_cmdlet_afe285942efc86534f71f64c78fbb2445}} 
+\index{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet@{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet}!Write\+Fail\+Message@{Write\+Fail\+Message}}
+\index{Write\+Fail\+Message@{Write\+Fail\+Message}!Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet@{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet}}
+\subsubsection{\texorpdfstring{Write\+Fail\+Message()}{WriteFailMessage()}}
+{\footnotesize\ttfamily void Get\+Repo\+Cmdlet.\+Get\+Repo\+Cmdlet.\+Write\+Fail\+Message (\begin{DoxyParamCaption}\item[{string}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Writes the passed failure message to the cmd prompt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 253 of file Get\+Repo\+Cmdlet.\+cs.
+
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_get_repo_cmdlet_aabc925069bb0855f2cd1e07ae832b44a}\label{class_get_repo_cmdlet_1_1_get_repo_cmdlet_aabc925069bb0855f2cd1e07ae832b44a}} 
+\index{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet@{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet}!Write\+Information\+Message@{Write\+Information\+Message}}
+\index{Write\+Information\+Message@{Write\+Information\+Message}!Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet@{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet}}
+\subsubsection{\texorpdfstring{Write\+Information\+Message()}{WriteInformationMessage()}}
+{\footnotesize\ttfamily void Get\+Repo\+Cmdlet.\+Get\+Repo\+Cmdlet.\+Write\+Information\+Message (\begin{DoxyParamCaption}\item[{string}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Writes the passed information message to cmd prompt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 271 of file Get\+Repo\+Cmdlet.\+cs.
+
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_get_repo_cmdlet_abd3278e2a9e0b1a3ac95dfee3eeb6bdc}\label{class_get_repo_cmdlet_1_1_get_repo_cmdlet_abd3278e2a9e0b1a3ac95dfee3eeb6bdc}} 
+\index{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet@{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet}!Write\+Warning\+Message@{Write\+Warning\+Message}}
+\index{Write\+Warning\+Message@{Write\+Warning\+Message}!Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet@{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet}}
+\subsubsection{\texorpdfstring{Write\+Warning\+Message()}{WriteWarningMessage()}}
+{\footnotesize\ttfamily void Get\+Repo\+Cmdlet.\+Get\+Repo\+Cmdlet.\+Write\+Warning\+Message (\begin{DoxyParamCaption}\item[{string}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Writes the passed warning message to cmd prompt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 262 of file Get\+Repo\+Cmdlet.\+cs.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_get_repo_cmdlet_a822f61308706124cb1f17d9cd1af1092}\label{class_get_repo_cmdlet_1_1_get_repo_cmdlet_a822f61308706124cb1f17d9cd1af1092}} 
+\index{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet@{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet}!\+\_\+cmd\+Container@{\+\_\+cmd\+Container}}
+\index{\+\_\+cmd\+Container@{\+\_\+cmd\+Container}!Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet@{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet}}
+\subsubsection{\texorpdfstring{\+\_\+cmd\+Container}{\_cmdContainer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_get_repo_cmdlet_1_1_cmd_container}{Cmd\+Container}} Get\+Repo\+Cmdlet.\+Get\+Repo\+Cmdlet.\+\_\+cmd\+Container\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Instance variable to hold parameters and processing information. 
+
+
+
+Definition at line 80 of file Get\+Repo\+Cmdlet.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_get_repo_cmdlet_ac98a9c9f16239f0dfd0d3649a79a66e5}\label{class_get_repo_cmdlet_1_1_get_repo_cmdlet_ac98a9c9f16239f0dfd0d3649a79a66e5}} 
+\index{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet@{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet}!Branch@{Branch}}
+\index{Branch@{Branch}!Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet@{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet}}
+\subsubsection{\texorpdfstring{Branch}{Branch}}
+{\footnotesize\ttfamily string Get\+Repo\+Cmdlet.\+Get\+Repo\+Cmdlet.\+Branch\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Defines a specific branch to clone. Must be a pre-\/existing branch. 
+
+To clone the branch \char`\"{}\+My\+Branch\char`\"{}\+: Get-\/\+Repo \href{https://github.com/Greatamerica/MyRepo}{\tt https\+://github.\+com/\+Greatamerica/\+My\+Repo} -\/\+Branch My\+Branch 
+
+Definition at line 41 of file Get\+Repo\+Cmdlet.\+cs.
+
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_get_repo_cmdlet_a9e8a15001d9ad8bc691ebfb75a7a5993}\label{class_get_repo_cmdlet_1_1_get_repo_cmdlet_a9e8a15001d9ad8bc691ebfb75a7a5993}} 
+\index{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet@{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet}!Exit@{Exit}}
+\index{Exit@{Exit}!Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet@{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet}}
+\subsubsection{\texorpdfstring{Exit}{Exit}}
+{\footnotesize\ttfamily Switch\+Parameter Get\+Repo\+Cmdlet.\+Get\+Repo\+Cmdlet.\+Exit\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Parameter flag that closes the PS instance after completing processing. 
+
+
+
+Definition at line 75 of file Get\+Repo\+Cmdlet.\+cs.
+
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_get_repo_cmdlet_ab8b0954fb74d52faa018ff0b721f7291}\label{class_get_repo_cmdlet_1_1_get_repo_cmdlet_ab8b0954fb74d52faa018ff0b721f7291}} 
+\index{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet@{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet}!Git\+Repo@{Git\+Repo}}
+\index{Git\+Repo@{Git\+Repo}!Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet@{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet}}
+\subsubsection{\texorpdfstring{Git\+Repo}{GitRepo}}
+{\footnotesize\ttfamily string Get\+Repo\+Cmdlet.\+Get\+Repo\+Cmdlet.\+Git\+Repo\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Accepts the mandatory parameter to declare the git repo. Accepts both a properly formed U\+RL to a git repo, or a repo name that is a part of the Great\+America collection. 
+
+Both of these examples will result in cloning the same repo (\char`\"{}\+My\+Repo\char`\"{})\+: U\+RL entry\+: Get-\/\+Repo \href{https://github.com/GreatAmerica/MyRepo}{\tt https\+://github.\+com/\+Great\+America/\+My\+Repo} Repo entry\+: Get-\/\+Repo My\+Repo 
+
+Definition at line 30 of file Get\+Repo\+Cmdlet.\+cs.
+
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_get_repo_cmdlet_a11300c987e6547a3282664b6ff3c02d3}\label{class_get_repo_cmdlet_1_1_get_repo_cmdlet_a11300c987e6547a3282664b6ff3c02d3}} 
+\index{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet@{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet}!Stop\+Execute@{Stop\+Execute}}
+\index{Stop\+Execute@{Stop\+Execute}!Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet@{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet}}
+\subsubsection{\texorpdfstring{Stop\+Execute}{StopExecute}}
+{\footnotesize\ttfamily Switch\+Parameter Get\+Repo\+Cmdlet.\+Get\+Repo\+Cmdlet.\+Stop\+Execute\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Parameter flag that stops execution after git command. 
+
+This parameter takes precedence over V\+S\+Version.
+
+Both of these result in preventing the solution from opening\+: Get-\/\+Repo \href{https://github.com/Greatamerica/MyRepo}{\tt https\+://github.\+com/\+Greatamerica/\+My\+Repo} -\/\+Stop\+Execute Get-\/\+Repo \href{https://github.com/Greatamerica/MyRepo}{\tt https\+://github.\+com/\+Greatamerica/\+My\+Repo} -\/\+Stop\+Execute -\/\+V\+S\+Version 2017 
+
+Definition at line 55 of file Get\+Repo\+Cmdlet.\+cs.
+
+\mbox{\Hypertarget{class_get_repo_cmdlet_1_1_get_repo_cmdlet_a0fb47dd1e2551b3883abaacf1c94057c}\label{class_get_repo_cmdlet_1_1_get_repo_cmdlet_a0fb47dd1e2551b3883abaacf1c94057c}} 
+\index{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet@{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet}!V\+S\+Version@{V\+S\+Version}}
+\index{V\+S\+Version@{V\+S\+Version}!Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet@{Get\+Repo\+Cmdlet\+::\+Get\+Repo\+Cmdlet}}
+\subsubsection{\texorpdfstring{V\+S\+Version}{VSVersion}}
+{\footnotesize\ttfamily double Get\+Repo\+Cmdlet.\+Get\+Repo\+Cmdlet.\+V\+S\+Version\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Parameter that collects the version/year of the VS to be used in launching the program. 
+
+If this parameter and the Stop\+Execute flag are both present, Stop\+Execute takes precedence over V\+S\+Version and will halt execution. 
+
+Definition at line 68 of file Get\+Repo\+Cmdlet.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Get\+Repo\+Cmdlet/\mbox{\hyperlink{_get_repo_cmdlet_8cs}{Get\+Repo\+Cmdlet.\+cs}}\end{DoxyCompactItemize}
