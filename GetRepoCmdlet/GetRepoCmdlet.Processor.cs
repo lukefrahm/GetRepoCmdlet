@@ -62,8 +62,8 @@ namespace GetRepoCmdlet
 				case GitCommand.CLONE:
 					return PrepareCloneCmd();
 				default:
-					// Reserved for future use
-					return "";
+					// Reserved for future git cmd additions
+					return string.Empty;
 			}
 
 			string PrepareCloneCmd()
@@ -180,91 +180,54 @@ namespace GetRepoCmdlet
 		/// <returns>Messages of what this process has done.</returns>
 		/// <seealso cref="CmdContainer"/>
 		/// <seealso cref="ConstMgr"/>
+		/// <seealso cref="DetermineVSInfo(double?)"/>
 		internal static string LaunchVS(CmdContainer cmdContainer)
 		{
-			string displayMessage = GetSlnFilePath();
-			if (!cmdContainer.StopExecute)
+			string displayMessage = GetSlnFilePath(ref cmdContainer);
+			if (cmdContainer.StopExecute)
 			{
-				switch (cmdContainer.VSVersion)
-				{
-					case 2008:
-					case 9:
-						// execute VS 2008
-						displayMessage = VSVersionDisplayMessage + "2008...";
-						VSFilePath(VSExecutionPath_9);
-						break;
-					case 2010:
-					case 10:
-						// execute VS 2010
-						displayMessage = VSVersionDisplayMessage + "2010...";
-						VSFilePath(VSExecutionPath_10);
-						break;
-					case 2012:
-					case 11:
-						// execute VS 2012
-						displayMessage = VSVersionDisplayMessage + "2012...";
-						VSFilePath(VSExecutionPath_11);
-						break;
-					case 2013:
-					case 12:
-						// execute VS 2013
-						displayMessage = VSVersionDisplayMessage + "2013...";
-						VSFilePath(VSExecutionPath_12);
-						break;
-					case 2015:
-					case 14:
-						// execute VS 2015
-						displayMessage = VSVersionDisplayMessage + "2015...";
-						VSFilePath(VSExecutionPath_14);
-						break;
-					case 2017:
-					case 15:
-						// execute VS 2017
-						displayMessage = VSVersionDisplayMessage + "2017...";
-						VSFilePath(VSExecutionPath_15);
-						break;
-					default:
-						// could not match a version
-						displayMessage = UIMessage_VSDefaultOpen;
-						VSFilePath(null);
-						break;
-				}
+				return displayMessage;
 			}
-
-			return displayMessage;
-
-			/// <summary>
-			/// Collects the sln file path of the repo from its directory.
-			/// </summary>
-			/// <returns>The message string of the result. If empty string, no message needs passed back (success)</returns>
-			string GetSlnFilePath()
+			else
 			{
-				try
-				{
-					cmdContainer.SlnFile = ((new DirectoryInfo(cmdContainer.RepoPath)).GetFiles("*.sln", SearchOption.AllDirectories).OrderByDescending(f => f.LastWriteTime).First()).FullName.ToString();
-					return string.Empty;
-				}
-				catch
-				{
-					cmdContainer.HaltExecution();
-					return UIMessage_NoSlnFound;
-				}
+				// Must both have a sln file found, as well as set to execute
+				(string vsMessage, string exePath) = DetermineVSInfo(cmdContainer.VSVersion);
+				ExecuteVS(cmdContainer, exePath);
+				return displayMessage + vsMessage;
 			}
+		}
 
-			/// <summary>
-			/// Executes the VS path to launch the repo's sln file.
-			/// </summary>
-			void VSFilePath(string vsExePath)
+		/// <summary>
+		/// Collects the sln file path of the repo from its directory.
+		/// </summary>
+		/// <returns>The message string of the result. If empty string, no message needs passed back (success)</returns>
+		private static string GetSlnFilePath(ref CmdContainer cmdContainer)
+		{
+			try
 			{
-				switch (vsExePath)
-				{
-					case null:
-						Process.Start(cmdContainer.SlnFile);
-						break;
-					default:
-						Process.Start(vsExePath, cmdContainer.SlnFile);
-						break;
-				}
+				cmdContainer.SlnFile = ((new DirectoryInfo(cmdContainer.RepoPath)).GetFiles(FileSearchPattern, SearchOption.AllDirectories).OrderByDescending(f => f.LastWriteTime).First()).FullName.ToString();
+				return UIMessage_SlnFound;
+			}
+			catch
+			{
+				cmdContainer.HaltExecution();
+				return UIMessage_NoSlnFound;
+			}
+		}
+
+		/// <summary>
+		/// Executes the VS path to launch the repo's sln file.
+		/// </summary>
+		private static void ExecuteVS(CmdContainer cmdContainer, string vsExePath)
+		{
+			switch (vsExePath)
+			{
+				case null:
+					Process.Start(cmdContainer.SlnFile);
+					break;
+				default:
+					Process.Start(vsExePath, cmdContainer.SlnFile);
+					break;
 			}
 		}
 		#endregion

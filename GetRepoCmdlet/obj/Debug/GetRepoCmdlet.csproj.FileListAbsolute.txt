@@ -5,3 +5,5 @@ C:\Code\Code\GetRepoCmdlet\GetRepoCmdlet\obj\Debug\GetRepoCmdlet.csprojResolveAs
 C:\Code\Code\GetRepoCmdlet\GetRepoCmdlet\obj\Debug\GetRepoCmdlet.csproj.CoreCompileInputs.cache
 C:\Code\Code\GetRepoCmdlet\GetRepoCmdlet\obj\Debug\GetRepoCmdlet.dll
 C:\Code\Code\GetRepoCmdlet\GetRepoCmdlet\obj\Debug\GetRepoCmdlet.pdb
+C:\Code\Code\GetRepoCmdlet\GetRepoCmdlet\bin\Debug\System.ValueTuple.dll
+C:\Code\Code\GetRepoCmdlet\GetRepoCmdlet\bin\Debug\System.ValueTuple.xml

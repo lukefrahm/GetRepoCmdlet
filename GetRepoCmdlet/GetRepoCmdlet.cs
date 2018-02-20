@@ -134,17 +134,16 @@ namespace GetRepoCmdlet
 			if (Processor.CheckForExistingDirectory(_cmdContainer.RepoPath))
 			{
 				// determine how to proceed if exists
-				string input = "D";
+				string input;
 				do
-				{
-					input = "D";
+				{ 
 					// Get user's decision of how to proceed, as the repo is already present
 					WriteWarningMessage(UIMessage_RepoExistsAlert);
-					input = Host.UI.ReadLine();
-				} while (Array.IndexOf(GitOutputErrors, input) < 0 && input.Length == 1);
+					string rawInput = Host.UI.ReadLine();
+					input = string.IsNullOrWhiteSpace(rawInput) ? DirectoryAction_Default : rawInput;
+				} while (Array.IndexOf(DirectoryActionResponses, input) < 0 && input.Length <= DirectoryAction_MaxLength);
 				
-				
-
+				//TODO: Cleanup and try to integrate with constants page
 				switch (input.ToUpper())
 				{
 					case "C":
@@ -153,7 +152,7 @@ namespace GetRepoCmdlet
 					case "B":
 						WriteInformationMessage(UIMessage_BackupBegin);
 						WriteInformationMessage(UIMessage_BackupLocation + Processor.BackupDirectory(_cmdContainer.RepoPath));
-						goto default;
+						break;
 					default:
 						_cmdContainer.GitCmd = GitCommand.CLONE;
 						if (Processor.DeleteDirectory(_cmdContainer.RepoPath))
