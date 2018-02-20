@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="namespace_get_repo_cmdlet">
+<title>GetRepoCmdlet</title>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_get_repo_cmdlet_1_1_cmd_container">GetRepoCmdlet::CmdContainer</link></para>
+<para><emphasis>&lt;summary&gt;
+Container for information needed to complete cmdlet processing.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_get_repo_cmdlet_1_1_const_mgr">GetRepoCmdlet::ConstMgr</link></para>
+<para><emphasis>&lt;summary&gt;
+Contains constant values to be referenced throughout the cmdlet. 
+All fields within this class can be altered and recompiled to 
+create dynamic messages.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_get_repo_cmdlet_1_1_enumerations">GetRepoCmdlet::Enumerations</link></para>
+<para><emphasis>&lt;summary&gt;
+Contains enumerations to be used throughout the cmdlet.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet">GetRepoCmdlet::GetRepoCmdlet</link></para>
+<para><emphasis>&lt;summary&gt;
+Cmdlet definition class to create Get-Repo cmdlet.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_get_repo_cmdlet_1_1_invalid_git_repo_exception">GetRepoCmdlet::InvalidGitRepoException</link></para>
+<para><emphasis>&lt;summary&gt;
+Custom application exception to handle invalid entries in the GitRepo parameter.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_get_repo_cmdlet_1_1_processor">GetRepoCmdlet::Processor</link></para>
+<para><emphasis>&lt;summary&gt;
+Internal static class that holds logic for execution of the cmdlet.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

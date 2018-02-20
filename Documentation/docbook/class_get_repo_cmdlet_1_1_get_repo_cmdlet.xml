@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_get_repo_cmdlet_1_1_get_repo_cmdlet">
+<title>GetRepoCmdlet::GetRepoCmdlet class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>CmdContainer _cmdContainer<para><emphasis>&lt;summary&gt;
+Instance variable to hold parameters and processing information.
+&lt;/summary&gt;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1a22503338cdb62a648a848cd8fcbf7769">BeginProcessing</link> (
+)<para><emphasis>&lt;summary&gt;
+Override of the base method for</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1ada76037eb2a8eed81eb1bb7a21d84693">ProcessRecord</link> (
+)<para><emphasis>&lt;summary&gt;
+Override of the base method for</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1a0968e20b2c03f033c93c2a74c643d06b">EndProcessing</link> (
+)<para><emphasis>&lt;summary&gt;
+Override of the base method for</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1a6d4524a1c3d700585b10ba0f0a6ec157">ExecuteGit</link> (
+)<para><emphasis>&lt;summary&gt;
+Executes and completes execution of necessary git commands. 
+Process is created to run in parallel, and uses async calls
+to print execution messages back to the invoking PS instance.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1afe285942efc86534f71f64c78fbb2445">WriteFailMessage</link> (
+string message)<para><emphasis>&lt;summary&gt;
+Writes the passed failure message to the cmd prompt.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1abd3278e2a9e0b1a3ac95dfee3eeb6bdc">WriteWarningMessage</link> (
+string message)<para><emphasis>&lt;summary&gt;
+Writes the passed warning message to cmd prompt.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1aabc925069bb0855f2cd1e07ae832b44a">WriteInformationMessage</link> (
+string message)<para><emphasis>&lt;summary&gt;
+Writes the passed information message to cmd prompt.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Cmdlet definition class to create Get-Repo cmdlet. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 16 of file GetRepoCmdlet.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>GetRepoCmdlet.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+            <simplesect>
+                <title>CmdContainer GetRepoCmdlet.GetRepoCmdlet._cmdContainer</title>                
+                <para>Definition at line 80 of file GetRepoCmdlet.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>GetRepoCmdlet.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1a22503338cdb62a648a848cd8fcbf7769">
+                <title>override void GetRepoCmdlet.GetRepoCmdlet.BeginProcessing ()</title> <emphasis>&lt;summary&gt;
+Override of the base method for</emphasis>
+                
+<para><computeroutput><link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1a22503338cdb62a648a848cd8fcbf7769">BeginProcessing()</link></computeroutput>. This override method handles instantiation and preparation of the passed information in the command. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Exceptions                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry><link linkend="class_get_repo_cmdlet_1_1_invalid_git_repo_exception">InvalidGitRepoException</link></entry>
+                                <entry>
+<para>Invalid git parameter entry will trigger this exception and halt the command. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>See also: </title>
+
+<para>GitParamType, <link linkend="class_get_repo_cmdlet_1_1_processor_1a0fba012ba15720a0fcd419c44b757c5b">Processor.ValidateGitParam(string)</link>, <link linkend="class_get_repo_cmdlet_1_1_cmd_container">CmdContainer</link></para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1ada76037eb2a8eed81eb1bb7a21d84693">
+                <title>override void GetRepoCmdlet.GetRepoCmdlet.ProcessRecord ()</title> <emphasis>&lt;summary&gt;
+Override of the base method for</emphasis>
+                
+<para><computeroutput><link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1ada76037eb2a8eed81eb1bb7a21d84693">ProcessRecord()</link></computeroutput>. This override method handles delegating all processing work to the <link linkend="class_get_repo_cmdlet_1_1_processor">Processor</link> class. </para>
+
+<para><formalpara><title>See also: </title>
+
+<para><link linkend="class_get_repo_cmdlet_1_1_processor_1ace9c1d574b3758f94c8cf65e7fcddbf3">Processor.CheckForExistingDirectory(string)</link>, Processor.BackupDirectory(string, string, string), <link linkend="class_get_repo_cmdlet_1_1_processor_1ae5f7bb67f8595174379a2cb144ae22c3">Processor.DeleteDirectory(string)</link>, <link linkend="class_get_repo_cmdlet_1_1_processor_1a9c532782d2575d5244440407103b4352">Processor.PrepareGitCmd(GitCommand, string, string)</link>, <link linkend="class_get_repo_cmdlet_1_1_processor_1a0d3e38fbd41a8e6bdfbc62dcf4656e90">Processor.LaunchVS(CmdContainer)</link>, <link linkend="class_get_repo_cmdlet_1_1_cmd_container">CmdContainer</link></para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1a0968e20b2c03f033c93c2a74c643d06b">
+                <title>override void GetRepoCmdlet.GetRepoCmdlet.EndProcessing ()</title> <emphasis>&lt;summary&gt;
+Override of the base method for</emphasis>
+                
+<para><computeroutput><link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1a0968e20b2c03f033c93c2a74c643d06b">EndProcessing()</link></computeroutput>. Handles closeout logic, and how to handle the PS command window instance. </para>
+
+<para><formalpara><title>See also: </title>
+
+<para><link linkend="class_get_repo_cmdlet_1_1_cmd_container">CmdContainer</link></para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1a6d4524a1c3d700585b10ba0f0a6ec157">
+                <title>void GetRepoCmdlet.GetRepoCmdlet.ExecuteGit ()</title> <emphasis>&lt;summary&gt;
+Executes and completes execution of necessary git commands. 
+Process is created to run in parallel, and uses async calls
+to print execution messages back to the invoking PS instance.
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1afe285942efc86534f71f64c78fbb2445">
+                <title>void GetRepoCmdlet.GetRepoCmdlet.WriteFailMessage (string message)</title> <emphasis>&lt;summary&gt;
+Writes the passed failure message to the cmd prompt.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>message</entry>
+                                <entry>
+<para>The message.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1abd3278e2a9e0b1a3ac95dfee3eeb6bdc">
+                <title>void GetRepoCmdlet.GetRepoCmdlet.WriteWarningMessage (string message)</title> <emphasis>&lt;summary&gt;
+Writes the passed warning message to cmd prompt.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>message</entry>
+                                <entry>
+<para>The message.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1aabc925069bb0855f2cd1e07ae832b44a">
+                <title>void GetRepoCmdlet.GetRepoCmdlet.WriteInformationMessage (string message)</title> <emphasis>&lt;summary&gt;
+Writes the passed information message to cmd prompt.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>message</entry>
+                                <entry>
+<para>The message.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

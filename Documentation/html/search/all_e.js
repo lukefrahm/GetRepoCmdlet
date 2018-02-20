@@ -1,17 +1,13 @@
 var searchData=
 [
-  ['quoteby',['QuoteBy',['../class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_details.html#ade4dbc337eeb5c4ae90fca9967f4d8d9',1,'GFSC::Services::EndOfTerm::QuoteDetails']]],
-  ['quotedate',['QuoteDate',['../class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_details.html#a6151312aa5ef14230bf8353bc296988a',1,'GFSC::Services::EndOfTerm::QuoteDetails']]],
-  ['quotedby',['QuotedBy',['../class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_request.html#a15ba7c16dfd4f41928a2c318af891e9d',1,'GFSC::Services::EndOfTerm::QuoteRequest']]],
-  ['quotedetails',['QuoteDetails',['../class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_details.html',1,'GFSC::Services::EndOfTerm']]],
-  ['quoteid',['QuoteID',['../class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_return.html#a5cefff1bdb7ebaa2e4afeff992dc489c',1,'GFSC.Services.EndOfTerm.QuoteReturn.QuoteID()'],['../class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_view.html#a503c1a59047c6c0e4ae7bd086fdcc631',1,'GFSC.Services.EndOfTerm.QuoteView.QuoteID()'],['../class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_details.html#a24a852adaf0bb43b850fd2a33762a884',1,'GFSC.Services.EndOfTerm.QuoteDetails.QuoteID()']]],
-  ['quoteinfo',['QuoteInfo',['../class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_info.html',1,'GFSC::Services::EndOfTerm']]],
-  ['quoteinformation',['QuoteInformation',['../class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_data_1_1_quote_information.html',1,'GFSC.Services.EndOfTerm.Data.QuoteInformation'],['../class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_business_1_1_quote_information.html',1,'GFSC.Services.EndOfTerm.Business.QuoteInformation'],['../class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_details.html#a6e74b7754975f5d1b9c469a8ea50e2d5',1,'GFSC.Services.EndOfTerm.QuoteDetails.QuoteInformation()']]],
-  ['quoteinformation_2ecs',['QuoteInformation.cs',['../_business_2_quote_information_8cs.html',1,'(Global Namespace)'],['../_data_2_quote_information_8cs.html',1,'(Global Namespace)']]],
-  ['quoterequest',['QuoteRequest',['../class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_request.html',1,'GFSC::Services::EndOfTerm']]],
-  ['quotereturn',['QuoteReturn',['../class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_return.html',1,'GFSC::Services::EndOfTerm']]],
-  ['quotes',['Quotes',['../class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quotes.html',1,'GFSC::Services::EndOfTerm']]],
-  ['quotes_2esvc_2ecs',['Quotes.svc.cs',['../_quotes_8svc_8cs.html',1,'']]],
-  ['quotetype',['QuoteType',['../class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_info.html#abcde88604b5e1dd0e68c13a14e1dc98d',1,'GFSC.Services.EndOfTerm.QuoteInfo.QuoteType()'],['../class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_misc_fee.html#ab5b2e45c78869e3ad469fc850c716b36',1,'GFSC.Services.EndOfTerm.MiscFee.QuoteType()']]],
-  ['quoteview',['QuoteView',['../class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_view.html',1,'GFSC::Services::EndOfTerm']]]
+  ['uimessage_5fbackupbegin',['UIMessage_BackupBegin',['../class_get_repo_cmdlet_1_1_const_mgr.html#ace9f0289f7ef5652da94008d446f2979',1,'GetRepoCmdlet::ConstMgr']]],
+  ['uimessage_5fbackuplocation',['UIMessage_BackupLocation',['../class_get_repo_cmdlet_1_1_const_mgr.html#a292329a7c6d1160909785c03fcf195e5',1,'GetRepoCmdlet::ConstMgr']]],
+  ['uimessage_5fdeletebegin',['UIMessage_DeleteBegin',['../class_get_repo_cmdlet_1_1_const_mgr.html#a5bec49a077b0e75de25519fc22ec5369',1,'GetRepoCmdlet::ConstMgr']]],
+  ['uimessage_5fdeletefail',['UIMessage_DeleteFail',['../class_get_repo_cmdlet_1_1_const_mgr.html#a1b33b40360f7f9fea5d7cf4e5e1da7f6',1,'GetRepoCmdlet::ConstMgr']]],
+  ['uimessage_5fdeletesuccess',['UIMessage_DeleteSuccess',['../class_get_repo_cmdlet_1_1_const_mgr.html#a0d5dbe456af87b8ef8f30bf26c74c415',1,'GetRepoCmdlet::ConstMgr']]],
+  ['uimessage_5flaunchingvs',['UIMessage_LaunchingVS',['../class_get_repo_cmdlet_1_1_const_mgr.html#afb8f26ebbe47d45457b5102801e1976a',1,'GetRepoCmdlet::ConstMgr']]],
+  ['uimessage_5fnoslnfound',['UIMessage_NoSlnFound',['../class_get_repo_cmdlet_1_1_const_mgr.html#a4141d4c7adb23338403989ce7ac35054',1,'GetRepoCmdlet::ConstMgr']]],
+  ['uimessage_5frepoexistsalert',['UIMessage_RepoExistsAlert',['../class_get_repo_cmdlet_1_1_const_mgr.html#af23b1d641e7d9262b956b7240a974ada',1,'GetRepoCmdlet::ConstMgr']]],
+  ['uimessage_5fvsdefaultopen',['UIMessage_VSDefaultOpen',['../class_get_repo_cmdlet_1_1_const_mgr.html#aa34c2b738dffcdbffa355f20234cea7a',1,'GetRepoCmdlet::ConstMgr']]],
+  ['url',['URL',['../class_get_repo_cmdlet_1_1_cmd_container.html#a57d88a0a01ee850f4a971e0063a8df8f',1,'GetRepoCmdlet.CmdContainer.URL()'],['../class_get_repo_cmdlet_1_1_enumerations.html#a8fa407a55382930bb57b853b36448801ae6b391a8d2c4d45902a23a8b6585703d',1,'GetRepoCmdlet.Enumerations.URL()']]]
 ];

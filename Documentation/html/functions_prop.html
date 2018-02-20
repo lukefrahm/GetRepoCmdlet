@@ -9,6 +9,14 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -48,6 +56,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('functions_prop.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -63,81 +87,14 @@ $(function() {
 </div>
 
 <div class="contents">
-&#160;
-
-<h3><a id="index_a"></a>- a -</h3><ul>
-<li>Amount
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_misc_fee.html#af872fbc6877b7626f7114d32de62122a">GFSC.Services.EndOfTerm.MiscFee</a>
-</li>
-<li>Assets
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_request.html#a3030cd3a25f48cea70c7d2ab523fff6c">GFSC.Services.EndOfTerm.QuoteRequest</a>
-</li>
-</ul>
-
-
-<h3><a id="index_b"></a>- b -</h3><ul>
+&#160;<ul>
 <li>Branch
 : <a class="el" href="class_get_repo_cmdlet_1_1_cmd_container.html#a36567fe0c3d03173a07f60ddb1524029">GetRepoCmdlet.CmdContainer</a>
 , <a class="el" href="class_get_repo_cmdlet_1_1_get_repo_cmdlet.html#ac98a9c9f16239f0dfd0d3649a79a66e5">GetRepoCmdlet.GetRepoCmdlet</a>
 </li>
-</ul>
-
-
-<h3><a id="index_c"></a>- c -</h3><ul>
-<li>ChargeDescription
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_misc_fee.html#a2ce815aab6e7c5a8fd1b9742770befb3">GFSC.Services.EndOfTerm.MiscFee</a>
-</li>
-<li>ContractID
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_misc_fee.html#a6cd4f96dd03589c67a928f42ff898d3e">GFSC.Services.EndOfTerm.MiscFee</a>
-</li>
-<li>ContractList
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_details.html#a12391fe474b254b47c39200d5c948612">GFSC.Services.EndOfTerm.QuoteDetails</a>
-</li>
-<li>Culture
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_test_application_1_1_properties_1_1_resources.html#ad5e483bf5cb8cbadc5d10c2ec126121e">GFSC.Services.TestApplication.Properties.Resources</a>
-</li>
-<li>CustomerID
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_details.html#a6d2f989ace33612425ebe9ac7359ea41">GFSC.Services.EndOfTerm.QuoteDetails</a>
-, <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_request.html#a1c6234faf200e4306cc839b47ca40f3c">GFSC.Services.EndOfTerm.QuoteRequest</a>
-</li>
-<li>CustomerName
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_details.html#aa701498796b2489ea7eeabe8fd9ab653">GFSC.Services.EndOfTerm.QuoteDetails</a>
-</li>
-</ul>
-
-
-<h3><a id="index_d"></a>- d -</h3><ul>
-<li>DealerID
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_request.html#a93ab2457edced4652493905d7b0db24d">GFSC.Services.EndOfTerm.QuoteRequest</a>
-</li>
-<li>Default
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_properties_1_1_settings.html#a35a9cb330e88645cec6ec30329bb57ed">GFSC.Services.EndOfTerm.Properties.Settings</a>
-, <a class="el" href="class_g_f_s_c_1_1_services_1_1_test_application_1_1_properties_1_1_settings.html#a332ab5639a8a97c4539877e1632f6dee">GFSC.Services.TestApplication.Properties.Settings</a>
-</li>
-<li>DueDate
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_misc_fee.html#a6a6cf8215958d439e93ab49cd0acc344">GFSC.Services.EndOfTerm.MiscFee</a>
-</li>
-</ul>
-
-
-<h3><a id="index_e"></a>- e -</h3><ul>
-<li>ErrorMessage
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_details.html#a4d12b61b84eaddfb9b30e75ebe4ba4f9">GFSC.Services.EndOfTerm.QuoteDetails</a>
-, <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_return.html#aca2140fd0599932c9347a0e2019e37a7">GFSC.Services.EndOfTerm.QuoteReturn</a>
-</li>
 <li>Exit
 : <a class="el" href="class_get_repo_cmdlet_1_1_cmd_container.html#a82345df98877ab881d8363d2bae6b51c">GetRepoCmdlet.CmdContainer</a>
 , <a class="el" href="class_get_repo_cmdlet_1_1_get_repo_cmdlet.html#a9e8a15001d9ad8bc691ebfb75a7a5993">GetRepoCmdlet.GetRepoCmdlet</a>
-</li>
-<li>ExpirationDate
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_details.html#ae66fe43ddf65b0c3f84c3038e730fcb3">GFSC.Services.EndOfTerm.QuoteDetails</a>
-</li>
-</ul>
-
-
-<h3><a id="index_g"></a>- g -</h3><ul>
-<li>GFSC_Services_EndOfTerm_IMService_IMService
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_properties_1_1_settings.html#ad741ee9474043185664f1648c6d0cb20">GFSC.Services.EndOfTerm.Properties.Settings</a>
 </li>
 <li>GitCmd
 : <a class="el" href="class_get_repo_cmdlet_1_1_cmd_container.html#a7f722b89dac0b65bfb0f897350ee68c3">GetRepoCmdlet.CmdContainer</a>
@@ -145,106 +102,14 @@ $(function() {
 <li>GitRepo
 : <a class="el" href="class_get_repo_cmdlet_1_1_get_repo_cmdlet.html#ab8b0954fb74d52faa018ff0b721f7291">GetRepoCmdlet.GetRepoCmdlet</a>
 </li>
-</ul>
-
-
-<h3><a id="index_i"></a>- i -</h3><ul>
-<li>IncludeEstimatedPropertyTaxes
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_request.html#a61cd6b965208dd65a838b5bc47f7ec00">GFSC.Services.EndOfTerm.QuoteRequest</a>
-</li>
-<li>IncludeFutureMiscBillables
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_request.html#a3a383f2e472c4edea42ff52c7815512f">GFSC.Services.EndOfTerm.QuoteRequest</a>
-</li>
-<li>Inv_Future
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_misc_fee.html#ace47d12f84e00daa492cc3776a29980f">GFSC.Services.EndOfTerm.MiscFee</a>
-</li>
-</ul>
-
-
-<h3><a id="index_l"></a>- l -</h3><ul>
-<li>LateCharges
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_info.html#afa39c042aca441b6dba5c3aeb8d21a99">GFSC.Services.EndOfTerm.QuoteInfo</a>
-</li>
-</ul>
-
-
-<h3><a id="index_m"></a>- m -</h3><ul>
-<li>MiscFees
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_details.html#a389e0852950c96d5d02e95cb6bf81c82">GFSC.Services.EndOfTerm.QuoteDetails</a>
-</li>
-</ul>
-
-
-<h3><a id="index_p"></a>- p -</h3><ul>
-<li>PartialBuyoutQuote
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_details.html#a1f9b13e9e9bd8fc1a4d694d51bedf1f7">GFSC.Services.EndOfTerm.QuoteDetails</a>
-</li>
-<li>PropertyTax
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_info.html#a2542108f3e6aa327053bab4ca880da67">GFSC.Services.EndOfTerm.QuoteInfo</a>
-</li>
-<li>PurchaseOptionAmount
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_info.html#ab3bed71e5768f3dbab3ec5daa1a1e796">GFSC.Services.EndOfTerm.QuoteInfo</a>
-</li>
-</ul>
-
-
-<h3><a id="index_q"></a>- q -</h3><ul>
-<li>QuoteBy
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_details.html#ade4dbc337eeb5c4ae90fca9967f4d8d9">GFSC.Services.EndOfTerm.QuoteDetails</a>
-</li>
-<li>QuoteDate
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_details.html#a6151312aa5ef14230bf8353bc296988a">GFSC.Services.EndOfTerm.QuoteDetails</a>
-</li>
-<li>QuotedBy
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_request.html#a15ba7c16dfd4f41928a2c318af891e9d">GFSC.Services.EndOfTerm.QuoteRequest</a>
-</li>
-<li>QuoteID
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_details.html#a24a852adaf0bb43b850fd2a33762a884">GFSC.Services.EndOfTerm.QuoteDetails</a>
-, <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_return.html#a5cefff1bdb7ebaa2e4afeff992dc489c">GFSC.Services.EndOfTerm.QuoteReturn</a>
-, <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_view.html#a503c1a59047c6c0e4ae7bd086fdcc631">GFSC.Services.EndOfTerm.QuoteView</a>
-</li>
-<li>QuoteInformation
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_details.html#a6e74b7754975f5d1b9c469a8ea50e2d5">GFSC.Services.EndOfTerm.QuoteDetails</a>
-</li>
-<li>QuoteType
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_misc_fee.html#ab5b2e45c78869e3ad469fc850c716b36">GFSC.Services.EndOfTerm.MiscFee</a>
-, <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_info.html#abcde88604b5e1dd0e68c13a14e1dc98d">GFSC.Services.EndOfTerm.QuoteInfo</a>
-</li>
-</ul>
-
-
-<h3><a id="index_r"></a>- r -</h3><ul>
-<li>ReceivableBalance
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_info.html#a99b3e5dd14126377c3d6e619e2e016a7">GFSC.Services.EndOfTerm.QuoteInfo</a>
-</li>
-<li>RemainingPayments
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_misc_fee.html#a72d8363402c138d59cfc9f1be69dbc1d">GFSC.Services.EndOfTerm.MiscFee</a>
-</li>
 <li>RepoName
 : <a class="el" href="class_get_repo_cmdlet_1_1_cmd_container.html#a2c0e7dc57cca3fefcea86853024ab385">GetRepoCmdlet.CmdContainer</a>
 </li>
 <li>RepoPath
 : <a class="el" href="class_get_repo_cmdlet_1_1_cmd_container.html#a634b5f69f676258f3735f6b095b8c5c7">GetRepoCmdlet.CmdContainer</a>
 </li>
-<li>ResourceManager
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_test_application_1_1_properties_1_1_resources.html#a7d76cabb088c3f432542b62a315008bd">GFSC.Services.TestApplication.Properties.Resources</a>
-</li>
-<li>Result
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_i_m_service_1_1_execute_integration_manager_call_completed_event_args.html#af993cb2852ca651afa704e1e6573b6b4">GFSC.Services.EndOfTerm.IMService.ExecuteIntegrationManagerCallCompletedEventArgs</a>
-, <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_i_m_service_1_1_execute_u_r_l_completed_event_args.html#a098e43508c318ff14807c75794e0df29">GFSC.Services.EndOfTerm.IMService.ExecuteURLCompletedEventArgs</a>
-</li>
 <li>RootPath
 : <a class="el" href="class_get_repo_cmdlet_1_1_cmd_container.html#a65f2a49c7e4f8f1848577840e705bd9f">GetRepoCmdlet.CmdContainer</a>
-</li>
-</ul>
-
-
-<h3><a id="index_s"></a>- s -</h3><ul>
-<li>SalesTax
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_info.html#a7f9fe095fa8a53d3953744f652827ae4">GFSC.Services.EndOfTerm.QuoteInfo</a>
-</li>
-<li>SecurityDeposit
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_info.html#a4007a4ac9e2e493f5d5309f0f070d9cb">GFSC.Services.EndOfTerm.QuoteInfo</a>
 </li>
 <li>SlnFile
 : <a class="el" href="class_get_repo_cmdlet_1_1_cmd_container.html#a059a91e8df682e275e0b2e46ac6b28a3">GetRepoCmdlet.CmdContainer</a>
@@ -253,47 +118,23 @@ $(function() {
 : <a class="el" href="class_get_repo_cmdlet_1_1_cmd_container.html#a2400da2e8f1299ed878e7c4cabf2afb6">GetRepoCmdlet.CmdContainer</a>
 , <a class="el" href="class_get_repo_cmdlet_1_1_get_repo_cmdlet.html#a11300c987e6547a3282664b6ff3c02d3">GetRepoCmdlet.GetRepoCmdlet</a>
 </li>
-</ul>
-
-
-<h3><a id="index_t"></a>- t -</h3><ul>
-<li>TaxAmount
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_misc_fee.html#a358389aa394ec87749f31750452fecb7">GFSC.Services.EndOfTerm.MiscFee</a>
-</li>
-<li>TotalBuyout
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_info.html#a49593e2310f7aa1d6b3a43a38d1097cd">GFSC.Services.EndOfTerm.QuoteInfo</a>
-</li>
-<li>TotalMiscellaneousFees
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_info.html#a4fff975c5f351e24278284de0b36569c">GFSC.Services.EndOfTerm.QuoteInfo</a>
-</li>
-</ul>
-
-
-<h3><a id="index_u"></a>- u -</h3><ul>
 <li>URL
 : <a class="el" href="class_get_repo_cmdlet_1_1_cmd_container.html#a57d88a0a01ee850f4a971e0063a8df8f">GetRepoCmdlet.CmdContainer</a>
 </li>
-<li>Url
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_i_m_service_1_1_i_m_service.html#a195907a6c53e8eae092945bcd23238a4">GFSC.Services.EndOfTerm.IMService.IMService</a>
-</li>
-<li>UseDefaultCredentials
-: <a class="el" href="class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_i_m_service_1_1_i_m_service.html#a4d9ac0412c01e21f5d0382dbd0188573">GFSC.Services.EndOfTerm.IMService.IMService</a>
-</li>
-</ul>
-
-
-<h3><a id="index_v"></a>- v -</h3><ul>
 <li>VSVersion
 : <a class="el" href="class_get_repo_cmdlet_1_1_cmd_container.html#aa3c4d3c76b60c871e174d0e971c7b6d4">GetRepoCmdlet.CmdContainer</a>
 , <a class="el" href="class_get_repo_cmdlet_1_1_get_repo_cmdlet.html#a0fb47dd1e2551b3883abaacf1c94057c">GetRepoCmdlet.GetRepoCmdlet</a>
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.14
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
 </body>
 </html>

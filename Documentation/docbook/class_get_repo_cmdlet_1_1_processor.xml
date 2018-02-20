@@ -1,0 +1,393 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_get_repo_cmdlet_1_1_processor">
+<title>GetRepoCmdlet::Processor class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static GitParamType <link linkend="class_get_repo_cmdlet_1_1_processor_1a0fba012ba15720a0fcd419c44b757c5b">ValidateGitParam</link> (
+string gitParam)<para><emphasis>&lt;summary&gt;
+Validates the git parameter based on a regex expression to determine
+both validity, as well as if it is a URL or repo name.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="class_get_repo_cmdlet_1_1_processor_1a9c532782d2575d5244440407103b4352">PrepareGitCmd</link> (
+GitCommand gitCmd, string repoURL, string branch)<para><emphasis>&lt;summary&gt;
+Prepares the git command.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="class_get_repo_cmdlet_1_1_processor_1a4a96e92b1c20e4f4fc38f9230d51912a">CreateRepoName</link> (
+string gitRepo_URL)<para><emphasis>&lt;summary&gt;
+Creates the name of the repo from the URL passed.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="class_get_repo_cmdlet_1_1_processor_1ae8b0a813f91987946bfc8e218b3ab396">CreateRepoURL</link> (
+string gitRepo_NAME)<para><emphasis>&lt;summary&gt;
+Creates the name of the repo from the repo name passed.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static bool <link linkend="class_get_repo_cmdlet_1_1_processor_1ace9c1d574b3758f94c8cf65e7fcddbf3">CheckForExistingDirectory</link> (
+string directory)<para><emphasis>&lt;summary&gt;
+Checks for an existing directory for this repo in the current location.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="class_get_repo_cmdlet_1_1_processor_1ae0c9a18121e39f1ee3c183d08f7bf0b2">BackupDirectory</link> (
+string repoPath)<para><emphasis>&lt;summary&gt;
+Performs a backup of the existing directory.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static bool <link linkend="class_get_repo_cmdlet_1_1_processor_1ae5f7bb67f8595174379a2cb144ae22c3">DeleteDirectory</link> (
+string repoPath)<para><emphasis>&lt;summary&gt;
+Deletes the directory passed to the method.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="class_get_repo_cmdlet_1_1_processor_1a0d3e38fbd41a8e6bdfbc62dcf4656e90">LaunchVS</link> (
+<link linkend="class_get_repo_cmdlet_1_1_cmd_container">CmdContainer</link> cmdContainer)<para><emphasis>&lt;summary&gt;
+Launches Visual Studio. If no parameter was passed by VSVersion, launches the default application.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Internal static class that holds logic for execution of the cmdlet. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 14 of file GetRepoCmdlet.Processor.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>GetRepoCmdlet.Processor.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="class_get_repo_cmdlet_1_1_processor_1a0fba012ba15720a0fcd419c44b757c5b">
+                <title>static GitParamType GetRepoCmdlet.Processor.ValidateGitParam (string gitParam)</title> <emphasis>&lt;summary&gt;
+Validates the git parameter based on a regex expression to determine
+both validity, as well as if it is a URL or repo name.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gitParam</entry>
+                                <entry>
+<para>The git parameter passed by the user.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>Enumeration of the validation result. </para>
+</formalpara>
+</para>
+
+<para>If the parameter is valid and a URL, returns GitParamType.URL If the parameter is valid and a repo name, returns GitParamType.REPO_NAME If the parameter is in invalid form, returns GitParamType.INVALID </para>
+
+<para><formalpara><title>See also: </title>
+
+<para>GitParamType</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_get_repo_cmdlet_1_1_processor_1a9c532782d2575d5244440407103b4352">
+                <title>static string GetRepoCmdlet.Processor.PrepareGitCmd (GitCommand gitCmd, string repoURL, string branch)</title> <emphasis>&lt;summary&gt;
+Prepares the git command.
+&lt;/summary&gt;</emphasis>
+                
+<para>Uses local functions to allow for easy extensibility for future git commands. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gitCmd</entry>
+                                <entry>
+<para>The git command to execute.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>repoURL</entry>
+                                <entry>
+<para>The repo URL.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>branch</entry>
+                                <entry>
+<para>The branch, if specified.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>The command string to execute.</para>
+</formalpara>
+<formalpara><title>See also: </title>
+
+<para>GitCommand</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_get_repo_cmdlet_1_1_processor_1a4a96e92b1c20e4f4fc38f9230d51912a">
+                <title>static string GetRepoCmdlet.Processor.CreateRepoName (string gitRepo_URL)</title> <emphasis>&lt;summary&gt;
+Creates the name of the repo from the URL passed.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gitRepo_URL</entry>
+                                <entry>
+<para>The git repo URL.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>The repo name, extracted from the URL.</para>
+</formalpara>
+<formalpara><title>See also: </title>
+
+<para><link linkend="class_get_repo_cmdlet_1_1_processor_1a0fba012ba15720a0fcd419c44b757c5b">ValidateGitParam(string)</link></para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_get_repo_cmdlet_1_1_processor_1ae8b0a813f91987946bfc8e218b3ab396">
+                <title>static string GetRepoCmdlet.Processor.CreateRepoURL (string gitRepo_NAME)</title> <emphasis>&lt;summary&gt;
+Creates the name of the repo from the repo name passed.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gitRepo_NAME</entry>
+                                <entry>
+<para>The git repo name.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>The repo name, concatenated with constants to create the git URL.</para>
+</formalpara>
+<formalpara><title>See also: </title>
+
+<para><link linkend="class_get_repo_cmdlet_1_1_processor_1a0fba012ba15720a0fcd419c44b757c5b">ValidateGitParam(string)</link>, GitURLStarter, GitURLEnder</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_get_repo_cmdlet_1_1_processor_1ace9c1d574b3758f94c8cf65e7fcddbf3">
+                <title>static bool GetRepoCmdlet.Processor.CheckForExistingDirectory (string directory)</title> <emphasis>&lt;summary&gt;
+Checks for an existing directory for this repo in the current location.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>directory</entry>
+                                <entry>
+<para>The directory to validate.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para><computeroutput>true</computeroutput> if the directory exists. <computeroutput>false</computeroutput> if the directory does not exist. </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_get_repo_cmdlet_1_1_processor_1ae0c9a18121e39f1ee3c183d08f7bf0b2">
+                <title>static string GetRepoCmdlet.Processor.BackupDirectory (string repoPath)</title> <emphasis>&lt;summary&gt;
+Performs a backup of the existing directory.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>repoPath</entry>
+                                <entry>
+<para>The repo path to backup.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>The location of the backup created by the process.</para>
+</formalpara>
+<formalpara><title>See also: </title>
+
+<para>BakDirAppendString, BakDirAppendString_Multi</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_get_repo_cmdlet_1_1_processor_1ae5f7bb67f8595174379a2cb144ae22c3">
+                <title>static bool GetRepoCmdlet.Processor.DeleteDirectory (string repoPath)</title> <emphasis>&lt;summary&gt;
+Deletes the directory passed to the method.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>repoPath</entry>
+                                <entry>
+<para>The directory path to delete (the old repo).</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_get_repo_cmdlet_1_1_processor_1a0d3e38fbd41a8e6bdfbc62dcf4656e90">
+                <title>static string GetRepoCmdlet.Processor.LaunchVS (CmdContainer cmdContainer)</title> <emphasis>&lt;summary&gt;
+Launches Visual Studio. If no parameter was passed by VSVersion, launches the default application.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>cmdContainer</entry>
+                                <entry>
+<para>The <link linkend="class_get_repo_cmdlet_1_1_cmd_container">CmdContainer</link> holding the information needed by this process.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>Messages of what this process has done.</para>
+</formalpara>
+<formalpara><title>See also: </title>
+
+<para><link linkend="class_get_repo_cmdlet_1_1_cmd_container">CmdContainer</link>, <link linkend="class_get_repo_cmdlet_1_1_const_mgr">ConstMgr</link></para>
+</formalpara>
+</para>
+
+            </section>
+</section>

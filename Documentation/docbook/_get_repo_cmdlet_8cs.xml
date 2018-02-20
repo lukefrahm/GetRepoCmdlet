@@ -1,0 +1,280 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_get_repo_cmdlet_8cs">
+    <title>GetRepoCmdlet.cs File Reference</title>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet">GetRepoCmdlet::GetRepoCmdlet</link></para>
+<para><emphasis>&lt;summary&gt;
+Cmdlet definition class to create Get-Repo cmdlet.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="namespace_get_repo_cmdlet">GetRepoCmdlet</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="namespace_system">System</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="namespace_system_1_1_collections_1_1_generic">System::Collections::Generic</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="namespace_system_1_1_diagnostics">System::Diagnostics</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="namespace_system_1_1_i_o">System::IO</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="namespace_system_1_1_management_1_1_automation">System::Management::Automation</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="namespacestatic">static</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="namespace_get_repo_cmdlet_1_1_enumerations">GetRepoCmdlet::Enumerations</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="namespace_get_repo_cmdlet_1_1_const_mgr">GetRepoCmdlet::ConstMgr</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Code/Code/GetRepoCmdlet/GetRepoCmdlet/GetRepoCmdlet.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="keyword">using</emphasis>&#32;<link linkend="namespace_system">System</link>;
+2 <emphasis class="keyword">using</emphasis>&#32;<link linkend="namespace_system">System</link>.Collections.Generic;
+3 <emphasis class="keyword">using</emphasis>&#32;<link linkend="namespace_system">System</link>.Diagnostics;
+4 <emphasis class="keyword">using</emphasis>&#32;<link linkend="namespace_system">System</link>.IO;
+5 <emphasis class="keyword">using</emphasis>&#32;<link linkend="namespace_system">System</link>.Management.Automation;
+6 <emphasis class="keyword">using</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<link linkend="namespace_get_repo_cmdlet">GetRepoCmdlet</link>.<link linkend="class_get_repo_cmdlet_1_1_enumerations">Enumerations</link>;
+7 <emphasis class="keyword">using</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<link linkend="namespace_get_repo_cmdlet">GetRepoCmdlet</link>.<link linkend="class_get_repo_cmdlet_1_1_const_mgr">ConstMgr</link>;
+8 
+9 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="namespace_get_repo_cmdlet">GetRepoCmdlet</link>
+10 {
+14 &#32;&#32;&#32;&#32;[Cmdlet(VerbsCommon.Get,&#32;<emphasis class="stringliteral">&quot;RepoTwo&quot;</emphasis>)]
+<link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet">15 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">class&#32;</emphasis><link linkend="namespace_get_repo_cmdlet">GetRepoCmdlet</link>&#32;:&#32;PSCmdlet
+16 &#32;&#32;&#32;&#32;{
+17 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#region&#32;PS&#32;Parameters&#32;and&#32;Instance&#32;Variables&#32;&#32;&#32;&#32;</emphasis>
+18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[Parameter(Position&#32;=&#32;0,&#32;Mandatory&#32;=&#32;<emphasis class="keyword">true</emphasis>)]
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[Alias(<emphasis class="stringliteral">&quot;git&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;clone&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;g&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;r&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;repo&quot;</emphasis>)]
+<link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1ab8b0954fb74d52faa018ff0b721f7291">30 </link>&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;GitRepo&#32;{&#32;<emphasis class="keyword">get</emphasis>;&#32;<emphasis class="keyword">set</emphasis>;&#32;}
+31 
+39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[Parameter]
+40 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[Alias(<emphasis class="stringliteral">&quot;B&quot;</emphasis>)]
+<link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1ac98a9c9f16239f0dfd0d3649a79a66e5">41 </link>&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;Branch&#32;{&#32;<emphasis class="keyword">get</emphasis>;&#32;<emphasis class="keyword">set</emphasis>;&#32;}
+42 
+53 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[Parameter]
+54 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[Alias(<emphasis class="stringliteral">&quot;NoRun&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;NoExec&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Halt&quot;</emphasis>)]
+<link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1a11300c987e6547a3282664b6ff3c02d3">55 </link>&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;SwitchParameter&#32;StopExecute&#32;{&#32;<emphasis class="keyword">get</emphasis>;&#32;<emphasis class="keyword">set</emphasis>;&#32;}
+56 
+65 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[Parameter]
+66 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[Alias(<emphasis class="stringliteral">&quot;VS&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Ver&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Use&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;V&quot;</emphasis>)]
+67 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[ValidateSet(<emphasis class="stringliteral">&quot;2008&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;9&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;2010&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;10&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;2012&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;11&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;2013&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;12&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;2015&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;14&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;2017&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;15&quot;</emphasis>)]
+<link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1a0fb47dd1e2551b3883abaacf1c94057c">68 </link>&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">double</emphasis>?&#32;VSVersion&#32;{&#32;<emphasis class="keyword">get</emphasis>;&#32;<emphasis class="keyword">set</emphasis>;&#32;}
+69 
+73 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[Parameter]
+74 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[Alias(<emphasis class="stringliteral">&quot;Close&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;X&quot;</emphasis>)]
+<link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1a9e8a15001d9ad8bc691ebfb75a7a5993">75 </link>&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;SwitchParameter&#32;Exit&#32;{&#32;<emphasis class="keyword">get</emphasis>;&#32;<emphasis class="keyword">set</emphasis>;&#32;}
+76 
+<link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1a822f61308706124cb1f17d9cd1af1092">80 </link>&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<link linkend="class_get_repo_cmdlet_1_1_cmd_container">CmdContainer</link>&#32;<link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1a822f61308706124cb1f17d9cd1af1092">_cmdContainer</link>;
+81 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#endregion</emphasis>
+82 
+83 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#region&#32;PowerShell&#32;Override&#32;Methods</emphasis>
+84 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">protected</emphasis>&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;BeginProcessing()
+96 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+97 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;base.BeginProcessing();
+98 
+99 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;prepare&#32;container</emphasis>
+100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GitParamType&#32;gitType&#32;=&#32;<link linkend="class_get_repo_cmdlet_1_1_processor">Processor</link>.<link linkend="class_get_repo_cmdlet_1_1_processor_1a0fba012ba15720a0fcd419c44b757c5b">ValidateGitParam</link>(GitRepo);
+101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(gitType&#32;==&#32;GitParamType.INVALID)
+102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_get_repo_cmdlet_1_1_invalid_git_repo_exception">InvalidGitRepoException</link>();
+104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>
+106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_cmdContainer&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_get_repo_cmdlet_1_1_cmd_container">CmdContainer</link>(
+108 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;url:&#32;(gitType&#32;==&#32;GitParamType.URL&#32;?&#32;GitRepo&#32;:&#32;<link linkend="class_get_repo_cmdlet_1_1_processor">Processor</link>.<link linkend="class_get_repo_cmdlet_1_1_processor_1ae8b0a813f91987946bfc8e218b3ab396">CreateRepoURL</link>(GitRepo)),
+109 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;repoName:&#32;(gitType&#32;==&#32;GitParamType.REPO_NAME&#32;?&#32;GitRepo&#32;:&#32;<link linkend="class_get_repo_cmdlet_1_1_processor">Processor</link>.<link linkend="class_get_repo_cmdlet_1_1_processor_1a4a96e92b1c20e4f4fc38f9230d51912a">CreateRepoName</link>(GitRepo)),
+110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;branch:&#32;this.Branch,
+111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;stopExecute:&#32;this.StopExecute.IsPresent,
+112 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vsVersion:&#32;<emphasis class="keyword">this</emphasis>.VSVersion,
+113 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;exit:&#32;<emphasis class="keyword">this</emphasis>.Exit.IsPresent,
+114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;fsCurrentDirectory:&#32;SessionState.Path.CurrentFileSystemLocation.ToString()
+115 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;);
+116 
+117 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Directory.SetCurrentDirectory(_cmdContainer.<link linkend="class_get_repo_cmdlet_1_1_cmd_container_1a65f2a49c7e4f8f1848577840e705bd9f">RootPath</link>);
+118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+120 
+<link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1ada76037eb2a8eed81eb1bb7a21d84693">131 </link>&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">protected</emphasis>&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1ada76037eb2a8eed81eb1bb7a21d84693">ProcessRecord</link>()
+132 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;check&#32;for&#32;directory&#32;existence&#32;</emphasis>
+134 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(<link linkend="class_get_repo_cmdlet_1_1_processor">Processor</link>.<link linkend="class_get_repo_cmdlet_1_1_processor_1ace9c1d574b3758f94c8cf65e7fcddbf3">CheckForExistingDirectory</link>(_cmdContainer.<link linkend="class_get_repo_cmdlet_1_1_cmd_container_1a634b5f69f676258f3735f6b095b8c5c7">RepoPath</link>))
+135 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+136 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;determine&#32;how&#32;to&#32;proceed&#32;if&#32;exists</emphasis>
+137 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">string</emphasis>&#32;input&#32;=&#32;<emphasis class="stringliteral">&quot;D&quot;</emphasis>;
+138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">do</emphasis>
+139 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+140 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;input&#32;=&#32;<emphasis class="stringliteral">&quot;D&quot;</emphasis>;
+141 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;Get&#32;user&apos;s&#32;decision&#32;of&#32;how&#32;to&#32;proceed,&#32;as&#32;the&#32;repo&#32;is&#32;already&#32;present</emphasis>
+142 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;WriteWarningMessage(UIMessage_RepoExistsAlert);
+143 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;input&#32;=&#32;Host.UI.ReadLine();
+144 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">while</emphasis>&#32;(Array.IndexOf(GitOutputErrors,&#32;input)&#32;&lt;&#32;0&#32;&amp;&amp;&#32;input.Length&#32;==&#32;1);
+145 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+146 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+147 
+148 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">switch</emphasis>&#32;(input.ToUpper())
+149 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+150 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;C&quot;</emphasis>:
+151 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_cmdContainer.<link linkend="class_get_repo_cmdlet_1_1_cmd_container_1a7f722b89dac0b65bfb0f897350ee68c3">GitCmd</link>&#32;=&#32;GitCommand.ABORT;
+152 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+153 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;B&quot;</emphasis>:
+154 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;WriteInformationMessage(UIMessage_BackupBegin);
+155 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;WriteInformationMessage(UIMessage_BackupLocation&#32;+&#32;<link linkend="class_get_repo_cmdlet_1_1_processor">Processor</link>.<link linkend="class_get_repo_cmdlet_1_1_processor_1ae0c9a18121e39f1ee3c183d08f7bf0b2">BackupDirectory</link>(_cmdContainer.<link linkend="class_get_repo_cmdlet_1_1_cmd_container_1a634b5f69f676258f3735f6b095b8c5c7">RepoPath</link>));
+156 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">goto</emphasis>&#32;<emphasis class="keywordflow">default</emphasis>;
+157 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">default</emphasis>:
+158 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_cmdContainer.<link linkend="class_get_repo_cmdlet_1_1_cmd_container_1a7f722b89dac0b65bfb0f897350ee68c3">GitCmd</link>&#32;=&#32;GitCommand.CLONE;
+159 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(<link linkend="class_get_repo_cmdlet_1_1_processor">Processor</link>.<link linkend="class_get_repo_cmdlet_1_1_processor_1ae5f7bb67f8595174379a2cb144ae22c3">DeleteDirectory</link>(_cmdContainer.<link linkend="class_get_repo_cmdlet_1_1_cmd_container_1a634b5f69f676258f3735f6b095b8c5c7">RepoPath</link>))
+160 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+161 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;WriteInformationMessage(UIMessage_DeleteSuccess);
+162 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+163 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>
+164 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+165 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;WriteFailMessage(UIMessage_DeleteFail);
+166 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+167 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+168 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+169 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+170 
+171 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(_cmdContainer.<link linkend="class_get_repo_cmdlet_1_1_cmd_container_1a7f722b89dac0b65bfb0f897350ee68c3">GitCmd</link>&#32;!=&#32;GitCommand.ABORT)
+172 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+173 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ExecuteGit();
+174 
+175 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;launch&#32;VS&#32;if&#32;applicable</emphasis>
+176 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(!_cmdContainer.<link linkend="class_get_repo_cmdlet_1_1_cmd_container_1a2400da2e8f1299ed878e7c4cabf2afb6">StopExecute</link>)
+177 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+178 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;WriteInformationMessage(UIMessage_LaunchingVS);
+179 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="class_get_repo_cmdlet_1_1_processor">Processor</link>.<link linkend="class_get_repo_cmdlet_1_1_processor_1a0d3e38fbd41a8e6bdfbc62dcf4656e90">LaunchVS</link>(_cmdContainer);
+180 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+181 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+182 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+183 
+<link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1a0968e20b2c03f033c93c2a74c643d06b">189 </link>&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">protected</emphasis>&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1a0968e20b2c03f033c93c2a74c643d06b">EndProcessing</link>()
+190 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+191 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(_cmdContainer.<link linkend="class_get_repo_cmdlet_1_1_cmd_container_1a82345df98877ab881d8363d2bae6b51c">Exit</link>)
+192 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{&#32;<emphasis class="comment">//&#32;Exit&#32;flag&#32;is&#32;present.&#32;Close&#32;prompt</emphasis>
+193 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Host.SetShouldExit(0);
+194 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+195 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+196 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#endregion</emphasis>
+197 
+198 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#region&#32;Private&#32;Methods&#32;&#32;&#32;&#32;&#32;</emphasis>
+199 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;ExecuteGit()
+205 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+206 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;List&lt;string&gt;&#32;outputList&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;List&lt;string&gt;();
+207 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">using</emphasis>&#32;(Process&#32;process&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;Process())
+208 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+209 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;process.StartInfo.WindowStyle&#32;=&#32;ProcessWindowStyle.Hidden;
+210 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;process.StartInfo.FileName&#32;=&#32;CmdExecutionApplication;
+211 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;process.StartInfo.Arguments&#32;=&#32;<link linkend="class_get_repo_cmdlet_1_1_processor">Processor</link>.<link linkend="class_get_repo_cmdlet_1_1_processor_1a9c532782d2575d5244440407103b4352">PrepareGitCmd</link>(_cmdContainer.<link linkend="class_get_repo_cmdlet_1_1_cmd_container_1a7f722b89dac0b65bfb0f897350ee68c3">GitCmd</link>,&#32;_cmdContainer.<link linkend="class_get_repo_cmdlet_1_1_cmd_container_1a57d88a0a01ee850f4a971e0063a8df8f">URL</link>,&#32;_cmdContainer.<link linkend="class_get_repo_cmdlet_1_1_cmd_container_1a36567fe0c3d03173a07f60ddb1524029">Branch</link>);
+212 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;process.StartInfo.UseShellExecute&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+213 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;process.StartInfo.RedirectStandardOutput&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+214 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;process.StartInfo.RedirectStandardError&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+215 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;process.OutputDataReceived&#32;+=&#32;(s,&#32;e)&#32;=&gt;&#32;outputList.Add(e.Data);
+216 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;process.ErrorDataReceived&#32;+=&#32;(s,&#32;e)&#32;=&gt;&#32;outputList.Add(e.Data);
+217 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;process.Start();
+218 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;process.BeginOutputReadLine();
+219 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;process.BeginErrorReadLine();
+220 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;process.WaitForExit();
+221 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+222 
+223 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">foreach</emphasis>&#32;(var&#32;outputMessage&#32;<emphasis class="keywordflow">in</emphasis>&#32;outputList)
+224 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+225 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(!<emphasis class="keywordtype">string</emphasis>.IsNullOrWhiteSpace(outputMessage))
+226 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+227 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;hasError&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+228 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;GitOutputErrors.Length;&#32;i++)
+229 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+230 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(outputMessage.Contains(GitOutputErrors[i]))
+231 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+232 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;hasError&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+233 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;i&#32;=&#32;GitOutputErrors.Length;
+234 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+235 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+236 
+237 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(hasError)
+238 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+239 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;WriteFailMessage(outputMessage);
+240 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+241 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>
+242 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+243 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;WriteInformationMessage(outputMessage);
+244 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+245 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+246 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+247 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+248 
+<link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1afe285942efc86534f71f64c78fbb2445">253 </link>&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1afe285942efc86534f71f64c78fbb2445">WriteFailMessage</link>(<emphasis class="keywordtype">string</emphasis>&#32;message)
+254 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+255 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Host.UI.WriteLine(<link linkend="namespace_system">System</link>.ConsoleColor.Red,&#32;Host.UI.RawUI.BackgroundColor,&#32;message);
+256 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+257 
+<link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1abd3278e2a9e0b1a3ac95dfee3eeb6bdc">262 </link>&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1abd3278e2a9e0b1a3ac95dfee3eeb6bdc">WriteWarningMessage</link>(<emphasis class="keywordtype">string</emphasis>&#32;message)
+263 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+264 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Host.UI.WriteLine(<link linkend="namespace_system">System</link>.ConsoleColor.Yellow,&#32;Host.UI.RawUI.BackgroundColor,&#32;message);
+265 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+266 
+<link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1aabc925069bb0855f2cd1e07ae832b44a">271 </link>&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_get_repo_cmdlet_1_1_get_repo_cmdlet_1aabc925069bb0855f2cd1e07ae832b44a">WriteInformationMessage</link>(<emphasis class="keywordtype">string</emphasis>&#32;message)
+272 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+273 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Host.UI.WriteLine(message);
+274 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+275 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#endregion</emphasis>
+276 &#32;&#32;&#32;&#32;}
+277 }
+278 
+    </computeroutput></literallayout>
+</section>

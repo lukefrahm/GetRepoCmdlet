@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_get_repo_cmdlet_1_1_invalid_git_repo_exception">
+<title>GetRepoCmdlet::InvalidGitRepoException class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_get_repo_cmdlet_1_1_invalid_git_repo_exception_1a806265e644c40f10548f065775b3ff6f">InvalidGitRepoException</link> (
+)<para><emphasis>&lt;summary&gt;
+Initializes a new instance of the &lt;see cref=&quot;InvalidGitRepoException&quot;/&gt; class.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_get_repo_cmdlet_1_1_invalid_git_repo_exception_1a14241ad466219ffb1c58e0e558397736">InvalidGitRepoException</link> (
+string message)<para><emphasis>&lt;summary&gt;
+Initializes a new instance of the &lt;see cref=&quot;InvalidGitRepoException&quot;/&gt; class.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_get_repo_cmdlet_1_1_invalid_git_repo_exception_1a7c08597e5771ae9c41171ddc486b746f">InvalidGitRepoException</link> (
+string message, System.Exception inner)<para><emphasis>&lt;summary&gt;
+Initializes a new instance of the &lt;see cref=&quot;InvalidGitRepoException&quot;/&gt; class.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Custom application exception to handle invalid entries in the GitRepo parameter. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><formalpara><title>See also: </title>
+
+<para>System.Exception</para>
+</formalpara>
+</para>
+                <para>Definition at line 161 of file GetRepoCmdlet.Objects.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>GetRepoCmdlet.Objects.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="class_get_repo_cmdlet_1_1_invalid_git_repo_exception_1a806265e644c40f10548f065775b3ff6f">
+                <title>GetRepoCmdlet.InvalidGitRepoException.InvalidGitRepoException ()</title> <emphasis>&lt;summary&gt;
+Initializes a new instance of the &lt;see cref=&quot;InvalidGitRepoException&quot;/&gt; class.
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>See also: </title>
+
+<para><link linkend="class_get_repo_cmdlet_1_1_const_mgr_1a84baefdb7fb1bcd31e0148b4ce532d8f">ConstMgr.InvalidGitRepoExceptionMessage</link></para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_get_repo_cmdlet_1_1_invalid_git_repo_exception_1a14241ad466219ffb1c58e0e558397736">
+                <title>GetRepoCmdlet.InvalidGitRepoException.InvalidGitRepoException (string message)</title> <emphasis>&lt;summary&gt;
+Initializes a new instance of the &lt;see cref=&quot;InvalidGitRepoException&quot;/&gt; class.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>message</entry>
+                                <entry>
+<para>The message that describes the error.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>See also: </title>
+
+<para><link linkend="class_get_repo_cmdlet_1_1_const_mgr_1a84baefdb7fb1bcd31e0148b4ce532d8f">ConstMgr.InvalidGitRepoExceptionMessage</link></para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_get_repo_cmdlet_1_1_invalid_git_repo_exception_1a7c08597e5771ae9c41171ddc486b746f">
+                <title>GetRepoCmdlet.InvalidGitRepoException.InvalidGitRepoException (string message, System.Exception inner)</title> <emphasis>&lt;summary&gt;
+Initializes a new instance of the &lt;see cref=&quot;InvalidGitRepoException&quot;/&gt; class.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>message</entry>
+                                <entry>
+<para>The message that describes the error.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>inner</entry>
+                                <entry>
+<para>The inner exception.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>See also: </title>
+
+<para><link linkend="class_get_repo_cmdlet_1_1_const_mgr_1a84baefdb7fb1bcd31e0148b4ce532d8f">ConstMgr.InvalidGitRepoExceptionMessage</link></para>
+</formalpara>
+</para>
+
+            </section>
+</section>

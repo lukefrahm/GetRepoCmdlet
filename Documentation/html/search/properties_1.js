@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['branch',['Branch',['../class_get_repo_cmdlet_1_1_get_repo_cmdlet.html#ac98a9c9f16239f0dfd0d3649a79a66e5',1,'GetRepoCmdlet.GetRepoCmdlet.Branch()'],['../class_get_repo_cmdlet_1_1_cmd_container.html#a36567fe0c3d03173a07f60ddb1524029',1,'GetRepoCmdlet.CmdContainer.Branch()']]]
+  ['exit',['Exit',['../class_get_repo_cmdlet_1_1_get_repo_cmdlet.html#a9e8a15001d9ad8bc691ebfb75a7a5993',1,'GetRepoCmdlet.GetRepoCmdlet.Exit()'],['../class_get_repo_cmdlet_1_1_cmd_container.html#a82345df98877ab881d8363d2bae6b51c',1,'GetRepoCmdlet.CmdContainer.Exit()']]]
 ];

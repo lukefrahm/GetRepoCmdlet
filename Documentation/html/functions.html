@@ -9,6 +9,14 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -48,6 +56,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('functions.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -70,12 +94,253 @@ $(function() {
 : <a class="el" href="class_get_repo_cmdlet_1_1_get_repo_cmdlet.html#a822f61308706124cb1f17d9cd1af1092">GetRepoCmdlet.GetRepoCmdlet</a>
 </li>
 </ul>
+
+
+<h3><a id="index_b"></a>- b -</h3><ul>
+<li>BackupDirectory()
+: <a class="el" href="class_get_repo_cmdlet_1_1_processor.html#ae0c9a18121e39f1ee3c183d08f7bf0b2">GetRepoCmdlet.Processor</a>
+</li>
+<li>BakDirAppendString
+: <a class="el" href="class_get_repo_cmdlet_1_1_const_mgr.html#ac59f0efc3a0397a54fd2c7c892253c56">GetRepoCmdlet.ConstMgr</a>
+</li>
+<li>BakDirAppendString_Multi
+: <a class="el" href="class_get_repo_cmdlet_1_1_const_mgr.html#a951d1145e5596ce4613a38bc981f1961">GetRepoCmdlet.ConstMgr</a>
+</li>
+<li>BeginProcessing()
+: <a class="el" href="class_get_repo_cmdlet_1_1_get_repo_cmdlet.html#a22503338cdb62a648a848cd8fcbf7769">GetRepoCmdlet.GetRepoCmdlet</a>
+</li>
+<li>Branch
+: <a class="el" href="class_get_repo_cmdlet_1_1_cmd_container.html#a36567fe0c3d03173a07f60ddb1524029">GetRepoCmdlet.CmdContainer</a>
+, <a class="el" href="class_get_repo_cmdlet_1_1_get_repo_cmdlet.html#ac98a9c9f16239f0dfd0d3649a79a66e5">GetRepoCmdlet.GetRepoCmdlet</a>
+</li>
+</ul>
+
+
+<h3><a id="index_c"></a>- c -</h3><ul>
+<li>CheckForExistingDirectory()
+: <a class="el" href="class_get_repo_cmdlet_1_1_processor.html#ace9c1d574b3758f94c8cf65e7fcddbf3">GetRepoCmdlet.Processor</a>
+</li>
+<li>CmdContainer()
+: <a class="el" href="class_get_repo_cmdlet_1_1_cmd_container.html#aad0056fff2ee68ae46f84ec17e31cf01">GetRepoCmdlet.CmdContainer</a>
+</li>
+<li>CmdExecutionApplication
+: <a class="el" href="class_get_repo_cmdlet_1_1_const_mgr.html#a11abb68978d0e05c4bfd7a4e3b14ddc0">GetRepoCmdlet.ConstMgr</a>
+</li>
+<li>CreateRepoName()
+: <a class="el" href="class_get_repo_cmdlet_1_1_processor.html#a4a96e92b1c20e4f4fc38f9230d51912a">GetRepoCmdlet.Processor</a>
+</li>
+<li>CreateRepoURL()
+: <a class="el" href="class_get_repo_cmdlet_1_1_processor.html#ae8b0a813f91987946bfc8e218b3ab396">GetRepoCmdlet.Processor</a>
+</li>
+</ul>
+
+
+<h3><a id="index_d"></a>- d -</h3><ul>
+<li>DeleteDirectory()
+: <a class="el" href="class_get_repo_cmdlet_1_1_processor.html#ae5f7bb67f8595174379a2cb144ae22c3">GetRepoCmdlet.Processor</a>
+</li>
+</ul>
+
+
+<h3><a id="index_e"></a>- e -</h3><ul>
+<li>EndProcessing()
+: <a class="el" href="class_get_repo_cmdlet_1_1_get_repo_cmdlet.html#a0968e20b2c03f033c93c2a74c643d06b">GetRepoCmdlet.GetRepoCmdlet</a>
+</li>
+<li>ExecuteGit()
+: <a class="el" href="class_get_repo_cmdlet_1_1_get_repo_cmdlet.html#a6d4524a1c3d700585b10ba0f0a6ec157">GetRepoCmdlet.GetRepoCmdlet</a>
+</li>
+<li>Exit
+: <a class="el" href="class_get_repo_cmdlet_1_1_cmd_container.html#a82345df98877ab881d8363d2bae6b51c">GetRepoCmdlet.CmdContainer</a>
+, <a class="el" href="class_get_repo_cmdlet_1_1_get_repo_cmdlet.html#a9e8a15001d9ad8bc691ebfb75a7a5993">GetRepoCmdlet.GetRepoCmdlet</a>
+</li>
+</ul>
+
+
+<h3><a id="index_g"></a>- g -</h3><ul>
+<li>GitBranchCmd
+: <a class="el" href="class_get_repo_cmdlet_1_1_const_mgr.html#afd4753e7427db6284f1c70072f85f56f">GetRepoCmdlet.ConstMgr</a>
+</li>
+<li>GitCloneCmd
+: <a class="el" href="class_get_repo_cmdlet_1_1_const_mgr.html#ad1db12b1d1ed53a02a275dc619e7164b">GetRepoCmdlet.ConstMgr</a>
+</li>
+<li>GitCmd
+: <a class="el" href="class_get_repo_cmdlet_1_1_cmd_container.html#a7f722b89dac0b65bfb0f897350ee68c3">GetRepoCmdlet.CmdContainer</a>
+</li>
+<li>GitCommand
+: <a class="el" href="class_get_repo_cmdlet_1_1_enumerations.html#a52683b5a6aca649a73b7bc9a076cc747">GetRepoCmdlet.Enumerations</a>
+</li>
+<li>GitOutputErrors
+: <a class="el" href="class_get_repo_cmdlet_1_1_const_mgr.html#a6e8915c1332f79fc3dfb4d155953f5db">GetRepoCmdlet.ConstMgr</a>
+</li>
+<li>GitParamType
+: <a class="el" href="class_get_repo_cmdlet_1_1_enumerations.html#a8fa407a55382930bb57b853b36448801">GetRepoCmdlet.Enumerations</a>
+</li>
+<li>GitRepo
+: <a class="el" href="class_get_repo_cmdlet_1_1_get_repo_cmdlet.html#ab8b0954fb74d52faa018ff0b721f7291">GetRepoCmdlet.GetRepoCmdlet</a>
+</li>
+<li>GitURLEnder
+: <a class="el" href="class_get_repo_cmdlet_1_1_const_mgr.html#ae28e609f323c8373cac4c139bded2c23">GetRepoCmdlet.ConstMgr</a>
+</li>
+<li>GitURLStarter
+: <a class="el" href="class_get_repo_cmdlet_1_1_const_mgr.html#adcd9d687565eb46487e0d468280bf6d4">GetRepoCmdlet.ConstMgr</a>
+</li>
+</ul>
+
+
+<h3><a id="index_h"></a>- h -</h3><ul>
+<li>HaltExecution()
+: <a class="el" href="class_get_repo_cmdlet_1_1_cmd_container.html#ab104ae079cf2c2c4efd7a13bb38ae6b1">GetRepoCmdlet.CmdContainer</a>
+</li>
+</ul>
+
+
+<h3><a id="index_i"></a>- i -</h3><ul>
+<li>InvalidGitRepoException()
+: <a class="el" href="class_get_repo_cmdlet_1_1_invalid_git_repo_exception.html#a806265e644c40f10548f065775b3ff6f">GetRepoCmdlet.InvalidGitRepoException</a>
+</li>
+<li>InvalidGitRepoExceptionMessage
+: <a class="el" href="class_get_repo_cmdlet_1_1_const_mgr.html#a84baefdb7fb1bcd31e0148b4ce532d8f">GetRepoCmdlet.ConstMgr</a>
+</li>
+</ul>
+
+
+<h3><a id="index_l"></a>- l -</h3><ul>
+<li>LaunchVS()
+: <a class="el" href="class_get_repo_cmdlet_1_1_processor.html#a0d3e38fbd41a8e6bdfbc62dcf4656e90">GetRepoCmdlet.Processor</a>
+</li>
+</ul>
+
+
+<h3><a id="index_m"></a>- m -</h3><ul>
+<li>MatchRepo
+: <a class="el" href="class_get_repo_cmdlet_1_1_const_mgr.html#aff2f74429f9706613bd3e5bca85df4c9">GetRepoCmdlet.ConstMgr</a>
+</li>
+<li>MatchURL
+: <a class="el" href="class_get_repo_cmdlet_1_1_const_mgr.html#a1876b931d632dc2d3d193151e3afcf68">GetRepoCmdlet.ConstMgr</a>
+</li>
+</ul>
+
+
+<h3><a id="index_p"></a>- p -</h3><ul>
+<li>PrepareGitCmd()
+: <a class="el" href="class_get_repo_cmdlet_1_1_processor.html#a9c532782d2575d5244440407103b4352">GetRepoCmdlet.Processor</a>
+</li>
+<li>ProcessRecord()
+: <a class="el" href="class_get_repo_cmdlet_1_1_get_repo_cmdlet.html#ada76037eb2a8eed81eb1bb7a21d84693">GetRepoCmdlet.GetRepoCmdlet</a>
+</li>
+</ul>
+
+
+<h3><a id="index_r"></a>- r -</h3><ul>
+<li>RepoName
+: <a class="el" href="class_get_repo_cmdlet_1_1_cmd_container.html#a2c0e7dc57cca3fefcea86853024ab385">GetRepoCmdlet.CmdContainer</a>
+</li>
+<li>RepoPath
+: <a class="el" href="class_get_repo_cmdlet_1_1_cmd_container.html#a634b5f69f676258f3735f6b095b8c5c7">GetRepoCmdlet.CmdContainer</a>
+</li>
+<li>RootPath
+: <a class="el" href="class_get_repo_cmdlet_1_1_cmd_container.html#a65f2a49c7e4f8f1848577840e705bd9f">GetRepoCmdlet.CmdContainer</a>
+</li>
+</ul>
+
+
+<h3><a id="index_s"></a>- s -</h3><ul>
+<li>SlnFile
+: <a class="el" href="class_get_repo_cmdlet_1_1_cmd_container.html#a059a91e8df682e275e0b2e46ac6b28a3">GetRepoCmdlet.CmdContainer</a>
+</li>
+<li>StopExecute
+: <a class="el" href="class_get_repo_cmdlet_1_1_cmd_container.html#a2400da2e8f1299ed878e7c4cabf2afb6">GetRepoCmdlet.CmdContainer</a>
+, <a class="el" href="class_get_repo_cmdlet_1_1_get_repo_cmdlet.html#a11300c987e6547a3282664b6ff3c02d3">GetRepoCmdlet.GetRepoCmdlet</a>
+</li>
+</ul>
+
+
+<h3><a id="index_u"></a>- u -</h3><ul>
+<li>UIMessage_BackupBegin
+: <a class="el" href="class_get_repo_cmdlet_1_1_const_mgr.html#ace9f0289f7ef5652da94008d446f2979">GetRepoCmdlet.ConstMgr</a>
+</li>
+<li>UIMessage_BackupLocation
+: <a class="el" href="class_get_repo_cmdlet_1_1_const_mgr.html#a292329a7c6d1160909785c03fcf195e5">GetRepoCmdlet.ConstMgr</a>
+</li>
+<li>UIMessage_DeleteBegin
+: <a class="el" href="class_get_repo_cmdlet_1_1_const_mgr.html#a5bec49a077b0e75de25519fc22ec5369">GetRepoCmdlet.ConstMgr</a>
+</li>
+<li>UIMessage_DeleteFail
+: <a class="el" href="class_get_repo_cmdlet_1_1_const_mgr.html#a1b33b40360f7f9fea5d7cf4e5e1da7f6">GetRepoCmdlet.ConstMgr</a>
+</li>
+<li>UIMessage_DeleteSuccess
+: <a class="el" href="class_get_repo_cmdlet_1_1_const_mgr.html#a0d5dbe456af87b8ef8f30bf26c74c415">GetRepoCmdlet.ConstMgr</a>
+</li>
+<li>UIMessage_LaunchingVS
+: <a class="el" href="class_get_repo_cmdlet_1_1_const_mgr.html#afb8f26ebbe47d45457b5102801e1976a">GetRepoCmdlet.ConstMgr</a>
+</li>
+<li>UIMessage_NoSlnFound
+: <a class="el" href="class_get_repo_cmdlet_1_1_const_mgr.html#a4141d4c7adb23338403989ce7ac35054">GetRepoCmdlet.ConstMgr</a>
+</li>
+<li>UIMessage_RepoExistsAlert
+: <a class="el" href="class_get_repo_cmdlet_1_1_const_mgr.html#af23b1d641e7d9262b956b7240a974ada">GetRepoCmdlet.ConstMgr</a>
+</li>
+<li>UIMessage_VSDefaultOpen
+: <a class="el" href="class_get_repo_cmdlet_1_1_const_mgr.html#aa34c2b738dffcdbffa355f20234cea7a">GetRepoCmdlet.ConstMgr</a>
+</li>
+<li>URL
+: <a class="el" href="class_get_repo_cmdlet_1_1_cmd_container.html#a57d88a0a01ee850f4a971e0063a8df8f">GetRepoCmdlet.CmdContainer</a>
+</li>
+</ul>
+
+
+<h3><a id="index_v"></a>- v -</h3><ul>
+<li>ValidateGitParam()
+: <a class="el" href="class_get_repo_cmdlet_1_1_processor.html#a0fba012ba15720a0fcd419c44b757c5b">GetRepoCmdlet.Processor</a>
+</li>
+<li>VSExecutionPath_10
+: <a class="el" href="class_get_repo_cmdlet_1_1_const_mgr.html#a0ad5d48840d47b19a4fc3de6bfbb8fa3">GetRepoCmdlet.ConstMgr</a>
+</li>
+<li>VSExecutionPath_11
+: <a class="el" href="class_get_repo_cmdlet_1_1_const_mgr.html#a8f10ba1487397a7ec1841e4f57fcd241">GetRepoCmdlet.ConstMgr</a>
+</li>
+<li>VSExecutionPath_12
+: <a class="el" href="class_get_repo_cmdlet_1_1_const_mgr.html#a18461eb6aee2c965490537d4163b90fe">GetRepoCmdlet.ConstMgr</a>
+</li>
+<li>VSExecutionPath_14
+: <a class="el" href="class_get_repo_cmdlet_1_1_const_mgr.html#a01df29a09d743d91af177b63d2fed473">GetRepoCmdlet.ConstMgr</a>
+</li>
+<li>VSExecutionPath_15
+: <a class="el" href="class_get_repo_cmdlet_1_1_const_mgr.html#aa4d550380f95a4ffd9ce96bc17c34dd8">GetRepoCmdlet.ConstMgr</a>
+</li>
+<li>VSExecutionPath_9
+: <a class="el" href="class_get_repo_cmdlet_1_1_const_mgr.html#adae487ce6c7ccaa6f217f3412af1b6ab">GetRepoCmdlet.ConstMgr</a>
+</li>
+<li>VSVersion
+: <a class="el" href="class_get_repo_cmdlet_1_1_cmd_container.html#aa3c4d3c76b60c871e174d0e971c7b6d4">GetRepoCmdlet.CmdContainer</a>
+, <a class="el" href="class_get_repo_cmdlet_1_1_get_repo_cmdlet.html#a0fb47dd1e2551b3883abaacf1c94057c">GetRepoCmdlet.GetRepoCmdlet</a>
+</li>
+<li>VSVersionDisplayMessage
+: <a class="el" href="class_get_repo_cmdlet_1_1_const_mgr.html#a31dd1e15462f9167c235c530003d6720">GetRepoCmdlet.ConstMgr</a>
+</li>
+</ul>
+
+
+<h3><a id="index_w"></a>- w -</h3><ul>
+<li>WriteFailMessage()
+: <a class="el" href="class_get_repo_cmdlet_1_1_get_repo_cmdlet.html#afe285942efc86534f71f64c78fbb2445">GetRepoCmdlet.GetRepoCmdlet</a>
+</li>
+<li>WriteInformationMessage()
+: <a class="el" href="class_get_repo_cmdlet_1_1_get_repo_cmdlet.html#aabc925069bb0855f2cd1e07ae832b44a">GetRepoCmdlet.GetRepoCmdlet</a>
+</li>
+<li>WriteWarningMessage()
+: <a class="el" href="class_get_repo_cmdlet_1_1_get_repo_cmdlet.html#abd3278e2a9e0b1a3ac95dfee3eeb6bdc">GetRepoCmdlet.GetRepoCmdlet</a>
+</li>
+</ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.14
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
 </body>
 </html>

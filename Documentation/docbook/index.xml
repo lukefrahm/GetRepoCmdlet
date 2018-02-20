@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <info>
+    <title>GitRepoCmdlet</title>
+    </info>
+    <chapter>
+        <title>Namespace Documentation</title>
+        <xi:include href="namespace_get_repo_cmdlet.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="namespace_get_repo_cmdlet_1_1_const_mgr.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="namespace_get_repo_cmdlet_1_1_enumerations.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="namespacestatic.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="namespace_system.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="namespace_system_1_1_collections_1_1_generic.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="namespace_system_1_1_diagnostics.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="namespace_system_1_1_i_o.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="namespace_system_1_1_linq.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="namespace_system_1_1_management_1_1_automation.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="namespace_system_1_1_text_1_1_regular_expressions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+    <chapter>
+        <title>Class Documentation</title>
+        <xi:include href="class_get_repo_cmdlet_1_1_cmd_container.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_get_repo_cmdlet_1_1_const_mgr.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_get_repo_cmdlet_1_1_enumerations.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_system_1_1_exception.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_get_repo_cmdlet_1_1_get_repo_cmdlet.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_get_repo_cmdlet_1_1_invalid_git_repo_exception.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_get_repo_cmdlet_1_1_processor.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_p_s_cmdlet.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+    <chapter>
+        <title>File Documentation</title>
+        <xi:include href="_get_repo_cmdlet_8_const_mgr_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_get_repo_cmdlet_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_get_repo_cmdlet_8_objects_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_get_repo_cmdlet_8_processor_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+</book>

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['amount',['Amount',['../class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_misc_fee.html#af872fbc6877b7626f7114d32de62122a',1,'GFSC::Services::EndOfTerm::MiscFee']]],
-  ['assets',['Assets',['../class_g_f_s_c_1_1_services_1_1_end_of_term_1_1_quote_request.html#a3030cd3a25f48cea70c7d2ab523fff6c',1,'GFSC::Services::EndOfTerm::QuoteRequest']]]
+  ['branch',['Branch',['../class_get_repo_cmdlet_1_1_get_repo_cmdlet.html#ac98a9c9f16239f0dfd0d3649a79a66e5',1,'GetRepoCmdlet.GetRepoCmdlet.Branch()'],['../class_get_repo_cmdlet_1_1_cmd_container.html#a36567fe0c3d03173a07f60ddb1524029',1,'GetRepoCmdlet.CmdContainer.Branch()']]]
 ];

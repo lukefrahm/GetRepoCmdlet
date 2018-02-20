@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_get_repo_cmdlet_1_1_enumerations">
+<title>GetRepoCmdlet::Enumerations class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="class_get_repo_cmdlet_1_1_enumerations_1a8fa407a55382930bb57b853b36448801">GitParamType</link> {
+<link linkend="class_get_repo_cmdlet_1_1_enumerations_1a8fa407a55382930bb57b853b36448801ae6b391a8d2c4d45902a23a8b6585703d">URL</link>,
+<link linkend="class_get_repo_cmdlet_1_1_enumerations_1a8fa407a55382930bb57b853b36448801a4852135c419d5b016ebf5b7110fe56b8">REPO_NAME</link>,
+<link linkend="class_get_repo_cmdlet_1_1_enumerations_1a8fa407a55382930bb57b853b36448801accc0377a8afbf50e7094f5c23a8af223">INVALID</link>
+}</literallayout>
+<para><emphasis>&lt;summary&gt;
+States the type of git parameter passed.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="class_get_repo_cmdlet_1_1_enumerations_1a52683b5a6aca649a73b7bc9a076cc747">GitCommand</link> {
+<link linkend="class_get_repo_cmdlet_1_1_enumerations_1a52683b5a6aca649a73b7bc9a076cc747aa6ddc0995d7b58e0302675f581845cce">CLONE</link>,
+<link linkend="class_get_repo_cmdlet_1_1_enumerations_1a52683b5a6aca649a73b7bc9a076cc747a8d12a2ca7e5a64036d7251a3eda51a38">ABORT</link>
+}</literallayout>
+<para><emphasis>&lt;summary&gt;
+States the type of git command to be used.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Contains enumerations to be used throughout the cmdlet. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 7 of file GetRepoCmdlet.Objects.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>GetRepoCmdlet.Objects.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="class_get_repo_cmdlet_1_1_enumerations_1a8fa407a55382930bb57b853b36448801">
+               <title>enum GitParamType </title>
+               
+               <formalpara>
+                    <title>Enumerator:</title>
+                    <variablelist>
+                        <varlistentry xml:id="class_get_repo_cmdlet_1_1_enumerations_1a8fa407a55382930bb57b853b36448801ae6b391a8d2c4d45902a23a8b6585703d">
+                            <term>URL</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_get_repo_cmdlet_1_1_enumerations_1a8fa407a55382930bb57b853b36448801a4852135c419d5b016ebf5b7110fe56b8">
+                            <term>REPO_NAME</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_get_repo_cmdlet_1_1_enumerations_1a8fa407a55382930bb57b853b36448801accc0377a8afbf50e7094f5c23a8af223">
+                            <term>INVALID</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                     </variablelist>
+                </formalpara>
+                <para>Definition at line 12 of file GetRepoCmdlet.Objects.cs
+                    <computeroutput><literallayout>
+{
+URL, 
+REPO_NAME, 
+INVALID, 
+}GitParamType;
+                    </literallayout></computeroutput>
+                </para>
+            </section>
+            <section xml:id="class_get_repo_cmdlet_1_1_enumerations_1a52683b5a6aca649a73b7bc9a076cc747">
+               <title>enum GitCommand </title>
+               
+<para>See <link linkend="class_get_repo_cmdlet_1_1_processor_1a9c532782d2575d5244440407103b4352">Processor.PrepareGitCmd(GitCommand, string, string)</link> for adding new git commands to the cmdlet. </para>
+
+<para><formalpara><title>See also: </title>
+
+<para><link linkend="class_get_repo_cmdlet_1_1_processor_1a9c532782d2575d5244440407103b4352">Processor.PrepareGitCmd(GitCommand, string, string)</link></para>
+</formalpara>
+</para>
+
+               <formalpara>
+                    <title>Enumerator:</title>
+                    <variablelist>
+                        <varlistentry xml:id="class_get_repo_cmdlet_1_1_enumerations_1a52683b5a6aca649a73b7bc9a076cc747aa6ddc0995d7b58e0302675f581845cce">
+                            <term>CLONE</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_get_repo_cmdlet_1_1_enumerations_1a52683b5a6aca649a73b7bc9a076cc747a8d12a2ca7e5a64036d7251a3eda51a38">
+                            <term>ABORT</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                     </variablelist>
+                </formalpara>
+                <para>Definition at line 27 of file GetRepoCmdlet.Objects.cs
+                    <computeroutput><literallayout>
+{
+CLONE, 
+ABORT, 
+}GitCommand;
+                    </literallayout></computeroutput>
+                </para>
+            </section>
+</section>

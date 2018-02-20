@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_get_repo_cmdlet_1_1_cmd_container">
+<title>GetRepoCmdlet::CmdContainer class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_get_repo_cmdlet_1_1_cmd_container_1aad0056fff2ee68ae46f84ec17e31cf01">CmdContainer</link> (
+string url, string repoName, string branch, bool stopExecute, double? vsVersion, bool exit, string fsCurrentDirectory)<para><emphasis>&lt;summary&gt;
+Initializes a new instance of the &lt;see cref=&quot;CmdContainer&quot;/&gt; class.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_get_repo_cmdlet_1_1_cmd_container_1ab104ae079cf2c2c4efd7a13bb38ae6b1">HaltExecution</link> (
+)<para><emphasis>&lt;summary&gt;
+Sets the StopExecute flag to &lt;c&gt;true&lt;/c&gt; to prevent VS execution.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Container for information needed to complete cmdlet processing. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 37 of file GetRepoCmdlet.Objects.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>GetRepoCmdlet.Objects.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="class_get_repo_cmdlet_1_1_cmd_container_1aad0056fff2ee68ae46f84ec17e31cf01">
+                <title>GetRepoCmdlet.CmdContainer.CmdContainer (string url, string repoName, string branch, bool stopExecute, double? vsVersion, bool exit, string fsCurrentDirectory)</title> <emphasis>&lt;summary&gt;
+Initializes a new instance of the &lt;see cref=&quot;CmdContainer&quot;/&gt; class.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>url</entry>
+                                <entry>
+<para>The github URL.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>repoName</entry>
+                                <entry>
+<para>Name of the repo.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>branch</entry>
+                                <entry>
+<para>The branch.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>stopExecute</entry>
+                                <entry>
+<para>if set to <computeroutput>true</computeroutput> stop execution.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>vsVersion</entry>
+                                <entry>
+<para>The VS version to execute.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>exit</entry>
+                                <entry>
+<para>if set to <computeroutput>true</computeroutput> exit PS instance.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>fsCurrentDirectory</entry>
+                                <entry>
+<para>The current file system directory of this PS instance.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_get_repo_cmdlet_1_1_cmd_container_1ab104ae079cf2c2c4efd7a13bb38ae6b1">
+                <title>void GetRepoCmdlet.CmdContainer.HaltExecution ()</title> <emphasis>&lt;summary&gt;
+Sets the StopExecute flag to &lt;c&gt;true&lt;/c&gt; to prevent VS execution.
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+</section>
