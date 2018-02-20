@@ -11,7 +11,7 @@ namespace GetRepoCmdlet
 	/// <summary>
 	/// Cmdlet definition class to create Get-Repo cmdlet.
 	/// </summary>
-	[Cmdlet(VerbsCommon.Get, "RepoTwo")]
+	[Cmdlet(VerbsCommon.Get, "Repo")]
 	public class GetRepoCmdlet : PSCmdlet
 	{
 		#region PS Parameters and Instance Variables	
